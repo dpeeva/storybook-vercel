@@ -12,10 +12,13 @@ export interface Props extends ButtonUnstyledProps {
 
 export const Button = styled(ButtonUnstyled)<Props>(
     ({ mode, variant, color, size }: Props) => ({
+        display: "flex",
+        alignItems: "center",
         border: "none",
         borderRadius: "18px",
-        padding: "12px 20px",
+        padding: "5px 18px",
         lineHeight: 1,
+        minHeight: "34px",
         fontFamily: themes[mode].typography.button.fontFamily,
         fontWeight: 500,
         letterSpacing: themes[mode].typography.button.letterSpacing,
@@ -43,8 +46,31 @@ export const Button = styled(ButtonUnstyled)<Props>(
         }),
         ...(variant === "outlined" && {
             ...(color === "primary" && {
-                border: `1px solid ${themes[mode].palette.primary.main}`,
+                border: `2px solid ${themes[mode].palette.primary.main}`,
+                backgroundColor: "transparent",
+                color: themes[mode].palette.primary.main,
+                ["&:hover"]: {
+                    borderColor: darken(themes[mode].palette[color].main, 0.05),
+                    backgroundColor: alpha(themes[mode].palette[color].main, 0.05),
+                },
+                [`&.${buttonUnstyledClasses.active}`]: {
+                    borderColor: darken(themes[mode].palette[color].main, 0.05),
+                },
+                [`&.${buttonUnstyledClasses.disabled}`]: {
+                    pointerEvents: "none",
+                    borderColor: alpha(themes[mode].palette[color].main, 0.5),
+                    color: alpha(themes[mode].palette[color].main, 0.5),
+                }
             }),
         }),
+        [".MuiSvgIcon-root"]: {
+            margin: "0 8px",
+            ["&:first-child"]: {
+                marginLeft: "-2px",
+            },
+            ["&:last-child"]: {
+                marginRight: "-2px",
+            },
+        },
     })
 )
