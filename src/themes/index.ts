@@ -1,3 +1,2 @@
-export { dark } from "./dark"
-export { light } from "./light"
+export { defaultLight, defaultDark } from "./default"
 export { joy } from "./joy"
