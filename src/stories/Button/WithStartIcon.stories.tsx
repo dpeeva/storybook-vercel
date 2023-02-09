@@ -1,45 +1,48 @@
 import type { Meta, StoryFn } from "@storybook/react"
 import { mui } from "../../mui"
 import { muiIcons } from "../../mui"
+import { Button } from "./Button"
 import { argTypes } from "./argTypes"
 
 export default {
     title: "Button",
-    component: mui.Button,
+    component: Button,
     parameters: {
         layout: "fullscreen"
     },
     argTypes: {
         ...argTypes,
-        // Additional props:
-        text: {
-            control: { type: "text" },
-            defaultValue: "Button",
-        }
     },
 } as Meta
 
-type Props = mui.ButtonProps & {
-    text?: string // TODO: check why not mandatory
-}
-
 const Template: StoryFn = ({
+    mode,
     variant,
     color,
     size,
     disabled,
     text
-}: Props) => (
-    <mui.Button
-        {...{ variant, color, size, disabled }}
-        startIcon={<muiIcons.ArrowBack />}
-    >{text}</mui.Button>
+}) => (
+    <Button {...{
+        mode,
+        variant,
+        color,
+        size,
+        disabled
+    }}>
+        <mui.SvgIcon>
+            <muiIcons.AccessAlarm></muiIcons.AccessAlarm>
+        </mui.SvgIcon>
+        {text}
+    </Button>
 )
 
 export const WithStartIcon = Template.bind({})
 WithStartIcon.args = {
+    mode: "joy",
     variant: "contained",
     color: "primary",
     size: "small",
     disabled: false,
+    text: "Button",
 }

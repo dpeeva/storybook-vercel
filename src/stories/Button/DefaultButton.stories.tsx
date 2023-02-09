@@ -1,10 +1,10 @@
 import type { Meta, StoryFn } from "@storybook/react"
-import { mui } from "../../mui"
+import { Button } from "./Button"
 import { argTypes } from "./argTypes"
 
 export default {
     title: "Button",
-    component: mui.Button,
+    component: Button,
     parameters: {
         layout: "fullscreen"
     },
@@ -13,14 +13,29 @@ export default {
     }
 } as Meta
 
-const Template: StoryFn = (args: mui.ButtonProps) => (
-    <mui.Button {...args}>Button</mui.Button>
+const Template: StoryFn = ({
+    mode,
+    variant,
+    color,
+    size,
+    disabled,
+    text
+}) => (
+    <Button {...{
+        mode,
+        variant,
+        color,
+        size,
+        disabled
+    }}>{text}</Button>
 )
 
 export const Default = Template.bind({})
 Default.args = {
+    mode: "joy",
     variant: "contained",
     color: "primary",
     size: "small",
     disabled: false,
+    text: "Button",
 }

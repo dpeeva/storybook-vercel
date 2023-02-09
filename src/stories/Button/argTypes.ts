@@ -6,7 +6,7 @@ export const argTypes = {
         control: { type: "radio" },
     },
     color: {
-        options: [...baseColors, "inherit"],
+        options: [...baseColors],
         control: { type: "select" },
     },
     size: {
@@ -15,5 +15,9 @@ export const argTypes = {
     },
     disabled: {
         control: { type: "boolean" },
+    },
+    // Additional props:
+    text: {
+        control: { type: "text" },
     }
 }
