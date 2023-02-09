@@ -30,7 +30,7 @@ const Template: StoryFn = ({
         size,
         disabled
     }}>
-        <mui.SvgIcon>
+        <mui.SvgIcon fontSize="small">
             <muiIcons.AccessAlarm></muiIcons.AccessAlarm>
         </mui.SvgIcon>
         {text}
