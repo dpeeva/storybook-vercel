@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'Kometa Unicase Book';
+    src: url('KometaUnicase-Book.eot');
+    src: local('Kometa Unicase Book'), local('KometaUnicase-Book'),
+        url('KometaUnicase-Book.eot?#iefix') format('embedded-opentype'),
+        url('KometaUnicase-Book.woff2') format('woff2'),
+        url('KometaUnicase-Book.woff') format('woff'),
+        url('KometaUnicase-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kometa';
+    src: url('Kometa-Bold.eot');
+    src: local('Kometa Bold'), local('Kometa-Bold'),
+        url('Kometa-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Kometa-Bold.woff2') format('woff2'),
+        url('Kometa-Bold.woff') format('woff'),
+        url('Kometa-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kometa';
+    src: url('Kometa-HeavyItalic.eot');
+    src: local('Kometa Heavy Italic'), local('Kometa-HeavyItalic'),
+        url('Kometa-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('Kometa-HeavyItalic.woff2') format('woff2'),
+        url('Kometa-HeavyItalic.woff') format('woff'),
+        url('Kometa-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Kometa';
+    src: url('Kometa-MediumItalic.eot');
+    src: local('Kometa Medium Italic'), local('Kometa-MediumItalic'),
+        url('Kometa-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Kometa-MediumItalic.woff2') format('woff2'),
+        url('Kometa-MediumItalic.woff') format('woff'),
+        url('Kometa-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Kometa';
+    src: url('Kometa-Medium.eot');
+    src: local('Kometa Medium'), local('Kometa-Medium'),
+        url('Kometa-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Kometa-Medium.woff2') format('woff2'),
+        url('Kometa-Medium.woff') format('woff'),
+        url('Kometa-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kometa Unicase';
+    src: url('KometaUnicase-Bold.eot');
+    src: local('Kometa Unicase Bold'), local('KometaUnicase-Bold'),
+        url('KometaUnicase-Bold.eot?#iefix') format('embedded-opentype'),
+        url('KometaUnicase-Bold.woff2') format('woff2'),
+        url('KometaUnicase-Bold.woff') format('woff'),
+        url('KometaUnicase-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kometa';
+    src: url('Kometa-Thin.eot');
+    src: local('Kometa Thin'), local('Kometa-Thin'),
+        url('Kometa-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Kometa-Thin.woff2') format('woff2'),
+        url('Kometa-Thin.woff') format('woff'),
+        url('Kometa-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kometa';
+    src: url('Kometa-BoldItalic.eot');
+    src: local('Kometa Bold Italic'), local('Kometa-BoldItalic'),
+        url('Kometa-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Kometa-BoldItalic.woff2') format('woff2'),
+        url('Kometa-BoldItalic.woff') format('woff'),
+        url('Kometa-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Kometa Unicase';
+    src: url('KometaUnicase-Regular.eot');
+    src: local('Kometa Unicase Regular'), local('KometaUnicase-Regular'),
+        url('KometaUnicase-Regular.eot?#iefix') format('embedded-opentype'),
+        url('KometaUnicase-Regular.woff2') format('woff2'),
+        url('KometaUnicase-Regular.woff') format('woff'),
+        url('KometaUnicase-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kometa';
+    src: url('Kometa-Heavy.eot');
+    src: local('Kometa Heavy'), local('Kometa-Heavy'),
+        url('Kometa-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('Kometa-Heavy.woff2') format('woff2'),
+        url('Kometa-Heavy.woff') format('woff'),
+        url('Kometa-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kometa Book';
+    src: url('Kometa-BookItalic.eot');
+    src: local('Kometa Book Italic'), local('Kometa-BookItalic'),
+        url('Kometa-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('Kometa-BookItalic.woff2') format('woff2'),
+        url('Kometa-BookItalic.woff') format('woff'),
+        url('Kometa-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Kometa Unicase';
+    src: url('KometaUnicase-Medium.eot');
+    src: local('Kometa Unicase Medium'), local('KometaUnicase-Medium'),
+        url('KometaUnicase-Medium.eot?#iefix') format('embedded-opentype'),
+        url('KometaUnicase-Medium.woff2') format('woff2'),
+        url('KometaUnicase-Medium.woff') format('woff'),
+        url('KometaUnicase-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kometa';
+    src: url('Kometa-Regular.eot');
+    src: local('Kometa Regular'), local('Kometa-Regular'),
+        url('Kometa-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Kometa-Regular.woff2') format('woff2'),
+        url('Kometa-Regular.woff') format('woff'),
+        url('Kometa-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kometa Unicase';
+    src: url('KometaUnicase-Thin.eot');
+    src: local('Kometa Unicase Thin'), local('KometaUnicase-Thin'),
+        url('KometaUnicase-Thin.eot?#iefix') format('embedded-opentype'),
+        url('KometaUnicase-Thin.woff2') format('woff2'),
+        url('KometaUnicase-Thin.woff') format('woff'),
+        url('KometaUnicase-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kometa';
+    src: url('Kometa-Light.eot');
+    src: local('Kometa Light'), local('Kometa-Light'),
+        url('Kometa-Light.eot?#iefix') format('embedded-opentype'),
+        url('Kometa-Light.woff2') format('woff2'),
+        url('Kometa-Light.woff') format('woff'),
+        url('Kometa-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kometa';
+    src: url('Kometa-ThinItalic.eot');
+    src: local('Kometa Thin Italic'), local('Kometa-ThinItalic'),
+        url('Kometa-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('Kometa-ThinItalic.woff2') format('woff2'),
+        url('Kometa-ThinItalic.woff') format('woff'),
+        url('Kometa-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Kometa Unicase';
+    src: url('KometaUnicase-Heavy.eot');
+    src: local('Kometa Unicase Heavy'), local('KometaUnicase-Heavy'),
+        url('KometaUnicase-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('KometaUnicase-Heavy.woff2') format('woff2'),
+        url('KometaUnicase-Heavy.woff') format('woff'),
+        url('KometaUnicase-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kometa';
+    src: url('Kometa-LightItalic.eot');
+    src: local('Kometa Light Italic'), local('Kometa-LightItalic'),
+        url('Kometa-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Kometa-LightItalic.woff2') format('woff2'),
+        url('Kometa-LightItalic.woff') format('woff'),
+        url('Kometa-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Kometa Unicase';
+    src: url('KometaUnicase-Light.eot');
+    src: local('Kometa Unicase Light'), local('KometaUnicase-Light'),
+        url('KometaUnicase-Light.eot?#iefix') format('embedded-opentype'),
+        url('KometaUnicase-Light.woff2') format('woff2'),
+        url('KometaUnicase-Light.woff') format('woff'),
+        url('KometaUnicase-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kometa';
+    src: url('Kometa-Italic.eot');
+    src: local('Kometa Italic'), local('Kometa-Italic'),
+        url('Kometa-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Kometa-Italic.woff2') format('woff2'),
+        url('Kometa-Italic.woff') format('woff'),
+        url('Kometa-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Kometa Book';
+    src: url('Kometa-Book.eot');
+    src: local('Kometa Book'), local('Kometa-Book'),
+        url('Kometa-Book.eot?#iefix') format('embedded-opentype'),
+        url('Kometa-Book.woff2') format('woff2'),
+        url('Kometa-Book.woff') format('woff'),
+        url('Kometa-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
