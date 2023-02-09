@@ -1,16 +1,10 @@
 import * as React from "react"
 import { mui } from "../src/mui"
-import { light, dark, joy } from "../src/themes"
-
-const THEMES = {
-    light,
-    dark,
-    joy
-}
+import { themes } from "../src/typings"
 
 export const withMuiTheme = (Story, context) => {
     const { theme: themeKey } = context.globals
-    const theme = React.useMemo(() => THEMES[themeKey] || THEMES["light"], [themeKey])
+    const theme = React.useMemo(() => themes[themeKey] || themes["light"], [themeKey])
 
     return <mui.ThemeProvider theme={theme}>
         <mui.CssBaseline>

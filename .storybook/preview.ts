@@ -1,3 +1,4 @@
+import { themes } from "../src/typings"
 import { withMuiTheme } from "./with-mui-theme.decorator"
 
 export const parameters = {
@@ -25,8 +26,9 @@ export const parameters = {
 
 export const argTypes = {
     mode: {
-        options: ["joy", "light", "dark"],
-        control: { type: "radio" }
+        options: Object.keys(themes),
+        control: { type: "radio" },
+        table: { disable: true },
     }
 }
 
@@ -35,21 +37,3 @@ export const args = { mode: "joy" }
 export const decorators = [
     withMuiTheme,
 ]
-
-export const globalTypes = {
-    theme: {
-        name: "Theme",
-        title: "Theme",
-        description: "Theme for your components",
-        defaultValue: "joy",
-        toolbar: {
-            icon: "paintbrush",
-            dynamicTitle: true,
-            items: [
-                { value: "light", left: "☀️", title: "Light mode" },
-                { value: "dark", left: "🌙", title: "Dark mode" },
-                { value: "joy", left: "🐠", title: "Joy mode" },
-            ],
-        },
-    },
-}
