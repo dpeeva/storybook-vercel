@@ -16,6 +16,12 @@ export const argTypes = {
     disabled: {
         control: { type: "boolean" },
     },
+    ref: {
+        table: { disable: true },
+    },
+    component: {
+        table: { disable: true },
+    },
     // Additional props:
     text: {
         control: { type: "text" },

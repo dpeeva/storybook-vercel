@@ -1,4 +1,4 @@
-import { alpha, styled } from "@mui/system"
+import { alpha, darken, styled } from "@mui/system"
 import ButtonUnstyled, { buttonUnstyledClasses, ButtonUnstyledProps } from "@mui/base/ButtonUnstyled"
 import { BaseColor, ThemeName, themes } from "../../typings"
 
@@ -13,9 +13,14 @@ export interface Props extends ButtonUnstyledProps {
 export const Button = styled(ButtonUnstyled)<Props>(
     ({ mode, variant, color, size }: Props) => ({
         border: "none",
-        padding: "8px 16px",
+        borderRadius: "18px",
+        padding: "12px 20px",
+        lineHeight: 1,
+        fontFamily: themes[mode].typography.button.fontFamily,
+        fontWeight: 500,
         letterSpacing: themes[mode].typography.button.letterSpacing,
         fontSize: themes[mode].typography.button.fontSize,
+        textTransform: "uppercase",
         cursor: "pointer",
         transition: "all 150ms ease",
         [`&.${buttonUnstyledClasses.focusVisible}`]: {
@@ -25,14 +30,15 @@ export const Button = styled(ButtonUnstyled)<Props>(
             backgroundColor: themes[mode].palette[color].main,
             color: themes[mode].palette[color].contrastText,
             ["&:hover"]: {
-                backgroundColor: themes[mode].palette[color].dark,
+                backgroundColor: darken(themes[mode].palette[color].main, 0.05),
             },
             [`&.${buttonUnstyledClasses.active}`]: {
-                backgroundColor: themes[mode].palette[color].dark,
+                backgroundColor: darken(themes[mode].palette[color].main, 0.05),
             },
             [`&.${buttonUnstyledClasses.disabled}`]: {
                 pointerEvents: "none",
                 backgroundColor: alpha(themes[mode].palette[color].main, 0.5),
+                color: alpha(themes[mode].palette[color].contrastText, 0.5),
             }
         }),
         ...(variant === "outlined" && {

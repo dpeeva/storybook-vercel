@@ -37,5 +37,5 @@ Default.args = {
     color: "primary",
     size: "small",
     disabled: false,
-    text: "Button",
+    text: "Добави в каталог",
 }
