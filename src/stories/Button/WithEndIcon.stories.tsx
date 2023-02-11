@@ -1,11 +1,11 @@
 import type { Meta, StoryFn } from "@storybook/react"
-import { mui } from "../../mui"
 import { muiIcons } from "../../mui"
 import { Button } from "./Button"
 import { argTypes } from "./argTypes"
+import { Adornment } from "./Adornment"
 
 export default {
-    title: "Button",
+    title: "Base/Button",
     component: Button,
     parameters: {
         layout: "fullscreen"
@@ -31,9 +31,9 @@ const Template: StoryFn = ({
         disabled
     }}>
         {text}
-        <mui.SvgIcon fontSize="small">
-            <muiIcons.AccessAlarm></muiIcons.AccessAlarm>
-        </mui.SvgIcon>
+        <Adornment position="end">
+            <muiIcons.AccessAlarm fontSize="small" />
+        </Adornment>
     </Button>
 )
 

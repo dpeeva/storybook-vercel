@@ -1,16 +1,16 @@
-import { baseColors } from "../constants"
+import { baseColors, baseSizes, baseVariants } from "../constants"
 
 export const argTypes = {
     variant: {
-        options: ["contained", "outlined", "text"],
+        options: baseVariants,
         control: { type: "radio" },
     },
     color: {
-        options: [...baseColors],
+        options: baseColors,
         control: { type: "select" },
     },
     size: {
-        options: ["small", "medium", "large"],
+        options: baseSizes,
         control: { type: "radio" },
     },
     disabled: {

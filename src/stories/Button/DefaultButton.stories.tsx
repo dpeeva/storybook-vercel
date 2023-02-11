@@ -3,7 +3,7 @@ import { Button } from "./Button"
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Button",
+    title: "Base/Button",
     component: Button,
     parameters: {
         layout: "fullscreen"
