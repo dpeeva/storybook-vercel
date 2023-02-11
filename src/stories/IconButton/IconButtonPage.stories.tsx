@@ -1,8 +1,7 @@
 import React from "react"
 import type { Meta, StoryFn } from "@storybook/react"
 import { IconButtonPage } from "./IconButtonPage"
-import { baseColors, baseVariants } from "../constants"
-
+import { baseColors } from "../constants"
 
 export default {
     title: "Base/IconButton/Page",
@@ -11,10 +10,6 @@ export default {
         layout: "fullscreen"
     },
     argTypes: {
-        variant: {
-            options: baseVariants,
-            control: { type: "radio" },
-        },
         color: {
             options: baseColors,
             control: { type: "select" },
@@ -25,16 +20,13 @@ export default {
 
 const Template: StoryFn = ({
     mode,
-    variant,
     color,
 }) => <IconButtonPage
         mode={mode}
-        variant={variant}
         color={color}
     />
 
 export const Page = Template.bind({})
 Page.args = {
-    variant: "contained",
     color: "info",
 }
