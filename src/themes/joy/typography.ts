@@ -46,8 +46,8 @@ export const typography: TypographyOptions = {
         fontWeight: 700,
     },
     button: {
-        fontSize: "12px",
-        textTransform: "none",
+        fontSize: "11px",
+        // textTransform: "none",
         letterSpacing: 0.25,
         fontWeight: 400,
     },
