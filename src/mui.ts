@@ -1,7 +1,7 @@
 import { SvgIconTypeMap } from "@mui/material"
 import { OverridableComponent } from "@mui/material/OverridableComponent"
 
-import { AccessTime, AccountBalance, AccountCircle, Add, AddCircle, AddCircleOutline, AddPhotoAlternate, AddHome, AddLink, AlignVerticalBottom, Apps, ArrowBackIosNew, ArrowCircleDown, ArrowCircleUp, ArrowBack, ArrowForward, ArrowForwardIos, ArrowUpward, ArrowDownward, Article, AspectRatio, Assessment, Assignment, AssignmentInd, AssignmentLate, AssignmentTurnedIn, AssuredWorkload, AttachEmail, Attribution, Attachment, AttachFile, AutoDelete, AutoStories, Autorenew, Backup, Badge, BackupTable, Balcony, Ballot, BarChart, Beenhere, Blinds, BlindsClosed, Block, Bolt, BookmarkAdd, BookmarkAdded, BookmarkRemove, BookmarkBorder, Bookmark, Bookmarks, BorderAll, BorderColor, Boy, BrowserUpdated, Brush, BuildCircle, Build, BurstMode, Cached, CalendarMonth, CalendarToday, CalendarViewDay, CalendarViewMonth, CalendarViewWeek, Cancel, CancelPresentation, CenterFocusStrong, CenterFocusWeak, Chair, ChangeCircle, Chat, ChatBubble, ChatBubbleOutline, Check, CheckBox, CheckBoxOutlineBlank, CheckCircle, CheckCircleOutline, ChevronLeft, ChevronRight, ChromeReaderMode, CleaningServices, Clear, Close, ClearAll, CloudDone, CloudDownload, CloudUpload, Collections, CollectionsBookmark, ColorLens, Colorize, Comment, CommentBank, CommentsDisabled, Commit, CompareArrows, Compress, Computer, CompassCalibration, ContactEmergency, ContactMail, ContactPage, ContactSupport, Contacts, ContentCopy, ContentPaste, ContentPasteGo, ContentPasteOff, ContentPasteSearch, ControlPoint, Cookie, CopyAll, CorporateFare, Create, CreateNewFolder, CropFree, CropOriginal, Dashboard, DashboardCustomize, DataSaverOff, DataSaverOn, Dataset, DatasetLinked, DateRange } from "@mui/icons-material"
+import { AccessTime, AccountBalance, AccountCircle, Add, AddCircle, AddCircleOutline, AddPhotoAlternate, AddHome, AddLink, AlignVerticalBottom, Apps, ArrowBackIosNew, ArrowCircleDown, ArrowCircleUp, ArrowBack, ArrowForward, ArrowForwardIos, ArrowUpward, ArrowDownward, Article, AspectRatio, Assessment, Assignment, AssignmentInd, AssignmentLate, AssignmentTurnedIn, AssuredWorkload, AttachEmail, Attribution, Attachment, AttachFile, AutoDelete, AutoStories, Autorenew, Backup, Badge, BackupTable, Balcony, Ballot, BarChart, Beenhere, Blinds, BlindsClosed, Block, Bolt, BookmarkAdd, BookmarkAdded, BookmarkRemove, BookmarkBorder, Bookmark, Bookmarks, BorderAll, BorderColor, Boy, BrowserUpdated, Brush, BuildCircle, Build, BurstMode, Cached, CalendarMonth, CalendarToday, CalendarViewDay, CalendarViewMonth, CalendarViewWeek, Cancel, CancelPresentation, CenterFocusStrong, CenterFocusWeak, Chair, ChangeCircle, Chat, ChatBubble, ChatBubbleOutline, Check, CheckBox, CheckBoxOutlineBlank, CheckCircle, CheckCircleOutline, ChevronLeft, ChevronRight, ChromeReaderMode, CleaningServices, Clear, Close, ClearAll, CloudDone, CloudDownload, CloudUpload, Collections, CollectionsBookmark, ColorLens, Colorize, Comment, CommentBank, CommentsDisabled, Commit, CompareArrows, Compress, Computer, CompassCalibration, ContactEmergency, ContactMail, ContactPage, ContactSupport, Contacts, ContentCopy, ContentPaste, ContentPasteGo, ContentPasteOff, ContentPasteSearch, ControlPoint, Cookie, CopyAll, CorporateFare, Create, CreateNewFolder, CropFree, CropOriginal, Dashboard, DashboardCustomize, DataSaverOff, DataSaverOn, Dataset, DatasetLinked, DateRange, Delete, DeleteForever, DeleteOutline, CircleNotifications, DeleteSweep, Description, DoNotDisturbOn } from "@mui/icons-material"
 
 type IconType = {
     name: string
@@ -133,7 +133,10 @@ export const contentIcons: IconType[] = [
     }, {
         name: "Article",
         component: Article
-    },
+    }, {
+        name: "Description",
+        component: Description
+    }
 ]
 
 export const cloudIcons: IconType[] = [
@@ -222,6 +225,9 @@ export const CRUDIcons: IconType[] = [
         name: "AddCircleOutline",
         component: AddCircleOutline
     }, {
+        name: "DoNotDisturbOn",
+        component: DoNotDisturbOn
+    }, {
         name: "AutoDelete",
         component: AutoDelete
     }, {
@@ -266,7 +272,16 @@ export const CRUDIcons: IconType[] = [
     }, {
         name: "Block",
         component: Block
-    },
+    }, {
+        name: "DeleteForever",
+        component: DeleteForever
+    }, {
+        name: "DeleteOutline",
+        component: DeleteOutline
+    }, {
+        name: "DeleteSweep",
+        component: DeleteSweep
+    }
 ]
 
 export const imageIcons: IconType[] = [
@@ -365,7 +380,10 @@ export const commentsIcons: IconType[] = [
     }, {
         name: "CompassCalibration",
         component: CompassCalibration
-    },
+    }, {
+        name: "CircleNotifications",
+        component: CircleNotifications
+    }
 ]
 
 export const colorIcons: IconType[] = [
@@ -455,9 +473,6 @@ export const settingsIcons = [
         name: "Chair",
         component: Chair
     },
-]
-
-export const icons: IconType[] = [
 ]
 
 export * as mui from "@mui/material"

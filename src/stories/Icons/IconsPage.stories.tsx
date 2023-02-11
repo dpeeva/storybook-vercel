@@ -25,15 +25,18 @@ export default {
 const Template: StoryFn = ({
     mode,
     variant,
+    size,
     color,
 }) => <IconsPage
         mode={mode}
         variant={variant}
+        size={size}
         color={color}
     />
 
 export const Page = Template.bind({})
 Page.args = {
     variant: "contained",
+    size: "large",
     color: "info",
 }

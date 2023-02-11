@@ -1,5 +1,5 @@
 import { alpha, styled } from "@mui/material"
-import { BaseColor, BaseVariant, ThemeName, themes } from "../../typings"
+import { BaseColor, BaseSize, BaseVariant, ThemeName, themes } from "../../typings"
 import { Typography } from "../Typography"
 import { IconButton } from "../IconButton"
 import { sections } from "./sections"
@@ -25,12 +25,14 @@ const IconWrapper = styled("div")(({ theme }) => ({
 interface Props {
     mode?: ThemeName
     variant: BaseVariant
+    size: BaseSize
     color: BaseColor
 }
 
 export const IconsPage: React.FunctionComponent<Props> = ({
     mode = "joy",
     variant,
+    size,
     color
 }) => {
     return <Wrapper theme={themes[mode]}>
@@ -44,9 +46,10 @@ export const IconsPage: React.FunctionComponent<Props> = ({
                     <Typography textType="h5">{`${icon.name}`}</Typography>
                     <IconButton
                         variant={variant}
+                        size={size}
                         color={color}
                     >
-                        <icon.component fontSize="small" />
+                        <icon.component />
                     </IconButton>
                 </IconWrapper>
                 )}
