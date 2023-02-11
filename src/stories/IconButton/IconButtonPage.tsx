@@ -19,10 +19,12 @@ const IconGroup = styled("div")(({ theme }) => ({
 
 interface Props {
     mode?: ThemeName
+    disabled: boolean
 }
 
 export const IconButtonPage: React.FunctionComponent<Props> = ({
     mode = "joy",
+    disabled
 }) => {
     return <Wrapper theme={themes[mode]}>
         {baseColors.map((c: any, i: number) =>
@@ -30,6 +32,7 @@ export const IconButtonPage: React.FunctionComponent<Props> = ({
                 <IconButton
                     variant="contained"
                     color={c}
+                    disabled={disabled}
                 >
                     <Add fontSize="small" />
                 </IconButton>
@@ -37,6 +40,7 @@ export const IconButtonPage: React.FunctionComponent<Props> = ({
                 <IconButton
                     variant="outlined"
                     color={c}
+                    disabled={disabled}
                 >
                     <Add fontSize="small" />
                 </IconButton>
@@ -44,6 +48,7 @@ export const IconButtonPage: React.FunctionComponent<Props> = ({
                 <IconButton
                     variant="text"
                     color={c}
+                    disabled={disabled}
                 >
                     <Add fontSize="small" />
                 </IconButton>

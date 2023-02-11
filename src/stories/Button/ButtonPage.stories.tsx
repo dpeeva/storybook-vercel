@@ -9,10 +9,23 @@ export default {
     parameters: {
         layout: "fullscreen"
     },
-    argTypes: {}
+    argTypes: {
+        disabled: {
+            control: { type: "boolean" },
+        },
+    }
 } as Meta
 
 
-const Template: StoryFn = ({ }) => <ButtonPage />
+const Template: StoryFn = ({
+    disabled
+}) => (
+    <ButtonPage
+        disabled={disabled}
+    />
+)
 
 export const Page = Template.bind({})
+Page.args = {
+    disabled: false,
+}

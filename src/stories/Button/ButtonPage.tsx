@@ -28,10 +28,12 @@ const Line = styled("div")({
 
 interface Props {
     mode?: ThemeName
+    disabled: boolean
 }
 
 export const ButtonPage: React.FunctionComponent<Props> = ({
-    mode
+    mode,
+    disabled
 }) => {
     return <Wrapper>
         {baseColors.map((c: any, index: number) => {
@@ -42,12 +44,14 @@ export const ButtonPage: React.FunctionComponent<Props> = ({
                             mode={mode}
                             color={c}
                             variant={v}
+                            disabled={disabled}
                         >Добави в каталог</Button>
 
                         <Button
                             mode={mode}
                             color={c}
                             variant={v}
+                            disabled={disabled}
                         >
                             Добави в каталог
                             <Adornment position="end">
@@ -59,6 +63,7 @@ export const ButtonPage: React.FunctionComponent<Props> = ({
                             mode={mode}
                             color={c}
                             variant={v}
+                            disabled={disabled}
                         >
                             <muiIcons.AddCircleRounded fontSize="small" />
                         </IconButton>

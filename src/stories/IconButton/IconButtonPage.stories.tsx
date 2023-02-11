@@ -10,9 +10,8 @@ export default {
         layout: "fullscreen"
     },
     argTypes: {
-        color: {
-            options: baseColors,
-            control: { type: "select" },
+        disabled: {
+            control: { type: "boolean" },
         },
     }
 } as Meta
@@ -20,8 +19,15 @@ export default {
 
 const Template: StoryFn = ({
     mode,
-}) => <IconButtonPage
+    disabled
+}) => (
+    <IconButtonPage
         mode={mode}
+        disabled={disabled}
     />
+)
 
 export const Page = Template.bind({})
+Page.args = {
+    disabled: false,
+}
