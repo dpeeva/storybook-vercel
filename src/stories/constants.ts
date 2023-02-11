@@ -1,4 +1,6 @@
 export const baseColors = ["primary", "secondary", "error", "success", "warning", "info"]
+export const baseSizes = ["small", "medium", "large"]
+export const baseVariants = ["contained", "outlined", "text"]
 
 export const placementOptions = [
     "auto",
