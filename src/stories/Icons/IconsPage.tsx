@@ -1,5 +1,6 @@
 import { alpha, styled } from "@mui/material"
 import { BaseColor, BaseSize, BaseVariant, ThemeName, themes } from "../../typings"
+import { IconType } from "../../mui"
 import { Typography } from "../Typography"
 import { IconButton } from "../IconButton"
 import { sections } from "./sections"
@@ -39,7 +40,7 @@ export const IconsPage: React.FunctionComponent<Props> = ({
         {sections.map(section => <>
             <Typography textType="h1">{section.name}</Typography>
             <IconGroup>
-                {section.iconsSet.map((icon, i: number) => <IconWrapper
+                {section.iconsSet.map((icon: IconType, i: number) => <IconWrapper
                     key={`${i}`}
                     theme={themes[mode]}
                 >

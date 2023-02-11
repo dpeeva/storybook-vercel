@@ -1,10 +1,6 @@
-import { arrowIcons, bookIcons, calendarIcons, cloudIcons, colorIcons, commentsIcons, contentIcons, CRUDIcons, displayIcons, icons, libraryIcons, linksIcons, settingsIcons, statsImages, successIcons, userIcons, warningIcons } from "../../mui"
+import { arrowIcons, bookIcons, calendarIcons, cloudIcons, colorIcons, commentsIcons, contentIcons, CRUDIcons, displayIcons, libraryIcons, linksIcons, settingsIcons, statsImages, successIcons, userIcons, warningIcons } from "../../mui"
 
 export const sections = [
-    {
-        name: "Common Icons",
-        iconsSet: icons
-    },
     {
         name: "Book Icons",
         iconsSet: bookIcons

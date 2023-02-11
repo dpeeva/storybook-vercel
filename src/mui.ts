@@ -3,12 +3,13 @@ import { OverridableComponent } from "@mui/material/OverridableComponent"
 
 import { AccessTime, AccountBalance, AccountCircle, Add, AddCircle, AddCircleOutline, AddPhotoAlternate, AddHome, AddLink, AlignVerticalBottom, Apps, ArrowBackIosNew, ArrowCircleDown, ArrowCircleUp, ArrowBack, ArrowForward, ArrowForwardIos, ArrowUpward, ArrowDownward, Article, AspectRatio, Assessment, Assignment, AssignmentInd, AssignmentLate, AssignmentTurnedIn, AssuredWorkload, AttachEmail, Attribution, Attachment, AttachFile, AutoDelete, AutoStories, Autorenew, Backup, Badge, BackupTable, Balcony, Ballot, BarChart, Beenhere, Blinds, BlindsClosed, Block, Bolt, BookmarkAdd, BookmarkAdded, BookmarkRemove, BookmarkBorder, Bookmark, Bookmarks, BorderAll, BorderColor, Boy, BrowserUpdated, Brush, BuildCircle, Build, BurstMode, Cached, CalendarMonth, CalendarToday, CalendarViewDay, CalendarViewMonth, CalendarViewWeek, Cancel, CancelPresentation, CenterFocusStrong, CenterFocusWeak, Chair, ChangeCircle, Chat, ChatBubble, ChatBubbleOutline, Check, CheckBox, CheckBoxOutlineBlank, CheckCircle, CheckCircleOutline, ChevronLeft, ChevronRight, ChromeReaderMode, CleaningServices, Clear, Close, ClearAll, CloudDone, CloudDownload, CloudUpload, Collections, CollectionsBookmark, ColorLens, Colorize, Comment, CommentBank, CommentsDisabled, Commit, CompareArrows, Compress, Computer, CompassCalibration, ContactEmergency, ContactMail, ContactPage, ContactSupport, Contacts, ContentCopy, ContentPaste, ContentPasteGo, ContentPasteOff, ContentPasteSearch, ControlPoint, Cookie, CopyAll, CorporateFare, Create, CreateNewFolder, CropFree, CropOriginal, Dashboard, DashboardCustomize, DataSaverOff, DataSaverOn, Dataset, DatasetLinked, DateRange, Delete, DeleteForever, DeleteOutline, CircleNotifications, DeleteSweep, Description, DoNotDisturbOn } from "@mui/icons-material"
 
-type IconType = {
-    name: string
-    component: OverridableComponent<SvgIconTypeMap<{}, "svg">> & {
-        muiName: string
-    }
+export type IconComponentType = OverridableComponent<SvgIconTypeMap<{}, "svg">> & {
+    muiName: string
+}
 
+export type IconType = {
+    name: string
+    component: IconComponentType
 }
 
 export const arrowIcons: IconType[] = [
