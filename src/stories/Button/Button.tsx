@@ -37,10 +37,6 @@ export const Button = styled(ButtonUnstyled)<Props>(({
         outline: "none",
     },
 
-    [`&.${buttonUnstyledClasses.disabled}`]: {
-        pointerEvents: "none",
-    },
-
     ...(variant === "contained" && {
         backgroundColor: themes[mode].palette[color].main,
         color: themes[mode].palette[color].contrastText,
@@ -48,8 +44,9 @@ export const Button = styled(ButtonUnstyled)<Props>(({
             backgroundColor: darken(themes[mode].palette[color].main, 0.15),
         },
         [`&.${buttonUnstyledClasses.disabled}`]: {
-            backgroundColor: alpha(themes[mode].palette[color].main, 0.5),
-            color: alpha(themes[mode].palette[color].contrastText, 0.5),
+            pointerEvents: "none",
+            backgroundColor: alpha(themes[mode].palette[color].main, 0.25),
+            color: alpha(themes[mode].palette[color].contrastText, 0.25),
         },
         ...(color === "primary" && {
             [`&:hover, &.${buttonUnstyledClasses.active}`]: {
@@ -61,7 +58,7 @@ export const Button = styled(ButtonUnstyled)<Props>(({
         }),
         ...(color === "info" && {
             [`&:hover, &.${buttonUnstyledClasses.active}`]: {
-                backgroundColor: lighten(themes[mode].palette[color].main, 0.35),
+                backgroundColor: lighten(themes[mode].palette[color].main, 0.25),
             }
         }),
     }),
@@ -74,17 +71,25 @@ export const Button = styled(ButtonUnstyled)<Props>(({
             backgroundColor: lighten(themes[mode].palette[color].light, 0.85),
         },
         [`&.${buttonUnstyledClasses.disabled}`]: {
-            borderColor: alpha(themes[mode].palette[color].dark, 0.5),
-            backgroundColor: alpha(themes[mode].palette[color].light, 0.5),
-            color: alpha(themes[mode].palette[color].dark, 0.5),
-        },
-        [".MuiSvgIcon-root"]: {
-            color: themes[mode].palette[color].dark,
+            pointerEvents: "none",
+            borderColor: alpha(themes[mode].palette[color].dark, 0.35),
+            color: alpha(themes[mode].palette.common.black, 0.25),
         },
         ...(color === "info" && {
+            [".MuiSvgIcon-root"]: {
+                color: alpha(themes[mode].palette.common.black, 0.85),
+            },
             [`&:hover, &.${buttonUnstyledClasses.active}`]: {
-                backgroundColor: lighten(themes[mode].palette[color].light, 0.95),
-            }
+                backgroundColor: lighten(themes[mode].palette[color].light, 0.9),
+                [".MuiSvgIcon-root"]: {
+                    color: themes[mode].palette.common.black,
+                },
+            },
+            [`&.${buttonUnstyledClasses.disabled}`]: {
+                [".MuiSvgIcon-root"]: {
+                    color: alpha(themes[mode].palette.common.black, 0.35),
+                },
+            },
         }),
     }),
 
@@ -95,6 +100,7 @@ export const Button = styled(ButtonUnstyled)<Props>(({
             backgroundColor: lighten(themes[mode].palette[color].light, 0.85),
         },
         [`&.${buttonUnstyledClasses.disabled}`]: {
+            pointerEvents: "none",
             backgroundColor: alpha(themes[mode].palette[color].light, 0.5),
             color: alpha(themes[mode].palette[color].light, 0.5),
         },
@@ -108,7 +114,7 @@ export const Button = styled(ButtonUnstyled)<Props>(({
         }),
         ...(color === "info" && {
             [`&:hover, &.${buttonUnstyledClasses.active}`]: {
-                backgroundColor: lighten(themes[mode].palette[color].light, 0.95),
+                backgroundColor: lighten(themes[mode].palette[color].light, 0.9),
             }
         }),
     }),
