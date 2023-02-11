@@ -1,6 +1,6 @@
 import { Add } from "@mui/icons-material"
 import { styled } from "@mui/material"
-import { ThemeName, themes } from "../../typings"
+import { BaseSize, ThemeName, themes } from "../../typings"
 import { baseColors } from "../constants"
 import { IconButton } from "./IconButton"
 
@@ -19,40 +19,45 @@ const IconGroup = styled("div")(({ theme }) => ({
 
 interface Props {
     mode?: ThemeName
+    size: BaseSize
     disabled: boolean
 }
 
 export const IconButtonPage: React.FunctionComponent<Props> = ({
     mode = "joy",
+    size,
     disabled
-}) => {
-    return <Wrapper theme={themes[mode]}>
-        {baseColors.map((c: any, i: number) =>
+}) => (
+    <Wrapper theme={themes[mode]}>
+        {baseColors.map((c: any, i: number) => (
             <IconGroup key={`icon-group-${i}`}>
                 <IconButton
                     variant="contained"
                     color={c}
+                    size={size}
                     disabled={disabled}
                 >
-                    <Add fontSize="small" />
+                    <Add />
                 </IconButton>
 
                 <IconButton
                     variant="outlined"
                     color={c}
+                    size={size}
                     disabled={disabled}
                 >
-                    <Add fontSize="small" />
+                    <Add />
                 </IconButton>
 
                 <IconButton
                     variant="text"
                     color={c}
+                    size={size}
                     disabled={disabled}
                 >
-                    <Add fontSize="small" />
+                    <Add />
                 </IconButton>
             </IconGroup>
-        )}
-    </Wrapper >
-}
+        ))}
+    </Wrapper>
+)

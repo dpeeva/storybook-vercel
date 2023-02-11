@@ -1,7 +1,7 @@
+import { Add, AddCircle } from "@mui/icons-material"
 import { styled } from "@mui/material"
 import React from "react"
-import { muiIcons } from "../../mui"
-import { ThemeName } from "../../typings"
+import { BaseSize, ThemeName, themes } from "../../typings"
 import { baseColors, baseVariants } from "../constants"
 import { IconButton } from "../IconButton"
 import { Adornment } from "./Adornment"
@@ -28,48 +28,53 @@ const Line = styled("div")({
 
 interface Props {
     mode?: ThemeName
+    size: BaseSize
     disabled: boolean
 }
 
 export const ButtonPage: React.FunctionComponent<Props> = ({
-    mode,
+    mode = "joy",
+    size,
     disabled
 }) => {
-    return <Wrapper>
-        {baseColors.map((c: any, index: number) => {
-            return <Line key={`line-${index}`}>
-                {baseVariants.map((v: any, i: number) => {
-                    return <Pair key={`pair-${index}-${i}`}>
+    return <Wrapper theme={themes[mode]}>
+        {baseColors.map((c: any, index: number) => (
+            <Line key={`line-${index}`}>
+                {baseVariants.map((v: any, i: number) => (
+                    <Pair key={`pair-${index}-${i}`}>
                         <Button
-                            mode={mode}
-                            color={c}
                             variant={v}
+                            color={c}
+                            size={size}
                             disabled={disabled}
                         >Добави в каталог</Button>
 
                         <Button
-                            mode={mode}
-                            color={c}
                             variant={v}
+                            color={c}
+                            size={size}
                             disabled={disabled}
                         >
                             Добави в каталог
-                            <Adornment position="end">
-                                <muiIcons.AddCircleRounded fontSize="small" />
+                            <Adornment
+                                position="end"
+                                size={size}
+                            >
+                                <AddCircle />
                             </Adornment>
                         </Button>
 
                         <IconButton
-                            mode={mode}
-                            color={c}
                             variant={v}
+                            color={c}
+                            size={size}
                             disabled={disabled}
                         >
-                            <muiIcons.AddCircleRounded fontSize="small" />
+                            <Add />
                         </IconButton>
                     </Pair>
-                })}
+                ))}
             </Line>
-        })}
+        ))}
     </Wrapper>
 }

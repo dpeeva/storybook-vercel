@@ -18,14 +18,19 @@ export default {
 
 
 const Template: StoryFn = ({
+    mode,
+    size,
     disabled
 }) => (
     <ButtonPage
+        mode={mode}
+        size={size}
         disabled={disabled}
     />
 )
 
 export const Page = Template.bind({})
 Page.args = {
+    size: "small",
     disabled: false,
 }

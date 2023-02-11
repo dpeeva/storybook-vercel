@@ -19,19 +19,40 @@ export const Button = styled(ButtonUnstyled)<Props>(({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    border: "1px solid transparent",
-    borderRadius: "17px",
-    padding: "7px 16px 5px",
+    borderStyle: "solid",
+    borderColor: "transparent",
     lineHeight: 0,
-    minHeight: "34px",
     fontFamily: themes[mode].typography.button.fontFamily,
     fontWeight: 500,
+    textTransform: "uppercase",
     letterSpacing: themes[mode].typography.button.letterSpacing,
-    fontSize: themes[mode].typography.button.fontSize,
-    textTransform: themes[mode].typography.button.textTransform,
     whiteSpace: "nowrap",
     cursor: "pointer",
     transition: "all 150ms ease",
+
+    ...(size === "small" && {
+        borderWidth: "1px",
+        borderRadius: "17px",
+        padding: "7px 16px 5px",
+        minHeight: "34px",
+        fontSize: "11px",
+    }),
+
+    ...(size === "medium" && {
+        borderWidth: "1px",
+        borderRadius: "20px",
+        padding: "7px 18px 5px",
+        minHeight: "40px",
+        fontSize: "12px",
+    }),
+
+    ...(size === "large" && {
+        borderWidth: "2px",
+        borderRadius: "23px",
+        padding: "4px 18px 3px",
+        minHeight: "46px",
+        fontSize: "14px",
+    }),
 
     [`&.${buttonUnstyledClasses.focusVisible}`]: {
         outline: "none",
@@ -67,6 +88,24 @@ export const Button = styled(ButtonUnstyled)<Props>(({
                 pointerEvents: "none",
                 backgroundColor: alpha(themes[mode].palette[color].main, 0.15),
                 color: alpha(themes[mode].palette.common.black, 0.35),
+            },
+        }),
+
+        ...(size === "small" && {
+            [".MuiSvgIcon-root"]: {
+                fontSize: "20px",
+            },
+        }),
+
+        ...(size === "medium" && {
+            [".MuiSvgIcon-root"]: {
+                fontSize: "24px",
+            },
+        }),
+
+        ...(size === "large" && {
+            [".MuiSvgIcon-root"]: {
+                fontSize: "32px",
             },
         }),
     }),
@@ -105,6 +144,24 @@ export const Button = styled(ButtonUnstyled)<Props>(({
                 color: alpha(themes[mode].palette.common.black, 0.85),
             },
         }),
+
+        ...(size === "small" && {
+            [".MuiSvgIcon-root"]: {
+                fontSize: "20px",
+            },
+        }),
+
+        ...(size === "medium" && {
+            [".MuiSvgIcon-root"]: {
+                fontSize: "24px",
+            },
+        }),
+
+        ...(size === "large" && {
+            [".MuiSvgIcon-root"]: {
+                fontSize: "32px",
+            },
+        }),
     }),
 
     ...(variant === "text" && {
@@ -123,14 +180,34 @@ export const Button = styled(ButtonUnstyled)<Props>(({
         [".MuiSvgIcon-root"]: {
             color: themes[mode].palette[color].dark,
         },
+
         ...(color === "primary" && {
             [`&:hover, &.${buttonUnstyledClasses.active}`]: {
                 backgroundColor: lighten(themes[mode].palette[color].light, 0.75),
             },
         }),
+
         ...(color === "info" && {
             [`&:hover, &.${buttonUnstyledClasses.active}`]: {
                 backgroundColor: lighten(themes[mode].palette[color].light, 0.9),
+            },
+        }),
+
+        ...(size === "small" && {
+            [".MuiSvgIcon-root"]: {
+                fontSize: "20px",
+            },
+        }),
+
+        ...(size === "medium" && {
+            [".MuiSvgIcon-root"]: {
+                fontSize: "24px",
+            },
+        }),
+
+        ...(size === "large" && {
+            [".MuiSvgIcon-root"]: {
+                fontSize: "32px",
             },
         }),
     }),

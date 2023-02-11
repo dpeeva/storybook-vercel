@@ -1,8 +1,8 @@
 import type { Meta, StoryFn } from "@storybook/react"
-import { muiIcons } from "../../mui"
+import { AddCircle } from "@mui/icons-material"
+import { Adornment } from "./Adornment"
 import { Button } from "./Button"
 import { argTypes } from "./argTypes"
-import { Adornment } from "./Adornment"
 
 export default {
     title: "Base/Button",
@@ -30,8 +30,8 @@ const Template: StoryFn = ({
         size,
         disabled
     }}>
-        <Adornment position="start">
-            <muiIcons.AccessAlarm fontSize="small" />
+        <Adornment position="start" size={size}>
+            <AddCircle />
         </Adornment>
         {text}
     </Button>

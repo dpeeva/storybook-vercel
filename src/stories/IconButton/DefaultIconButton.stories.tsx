@@ -1,7 +1,7 @@
 import type { Meta, StoryFn } from "@storybook/react"
+import { Add } from "@mui/icons-material"
 import { IconButton } from "./IconButton"
 import { argTypes } from "./argTypes"
-import { Add } from "@mui/icons-material"
 
 export default {
     title: "Base/IconButton",
@@ -20,7 +20,6 @@ const Template: StoryFn = ({
     color,
     size,
     disabled,
-    text
 }) => (
     <IconButton {...{
         mode,
@@ -29,7 +28,7 @@ const Template: StoryFn = ({
         size,
         disabled
     }}>
-        <Add fontSize="small" />
+        <Add />
     </IconButton>
 )
 
