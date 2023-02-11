@@ -20,13 +20,8 @@ export default {
 
 const Template: StoryFn = ({
     mode,
-    color,
 }) => <IconButtonPage
         mode={mode}
-        color={color}
     />
 
 export const Page = Template.bind({})
-Page.args = {
-    color: "info",
-}

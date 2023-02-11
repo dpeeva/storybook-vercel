@@ -1,6 +1,6 @@
 import { Add } from "@mui/icons-material"
 import { styled } from "@mui/material"
-import { BaseColor, ThemeName, themes } from "../../typings"
+import { ThemeName, themes } from "../../typings"
 import { baseColors } from "../constants"
 import { IconButton } from "./IconButton"
 
@@ -19,12 +19,10 @@ const IconGroup = styled("div")(({ theme }) => ({
 
 interface Props {
     mode?: ThemeName
-    color: BaseColor
 }
 
 export const IconButtonPage: React.FunctionComponent<Props> = ({
     mode = "joy",
-    color
 }) => {
     return <Wrapper theme={themes[mode]}>
         {baseColors.map((c: any, i: number) =>
