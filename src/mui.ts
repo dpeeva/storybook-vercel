@@ -11,143 +11,8 @@ type IconType = {
 
 }
 
-export const icons: IconType[] = [
+export const arrowIcons: IconType[] = [
     {
-        name: "AccountCircle",
-        component: AccountCircle
-    }, {
-        name: "AutoStories",
-        component: AutoStories
-    }, {
-        name: "ChromeReaderMode",
-        component: ChromeReaderMode
-    }, {
-        name: "Bookmark",
-        component: Bookmark
-    }, {
-        name: "BookmarkAdd",
-        component: BookmarkAdd
-    }, {
-        name: "BookmarkAdded",
-        component: BookmarkAdded
-    }, {
-        name: "BookmarkRemove",
-        component: BookmarkRemove
-    }, {
-        name: "Bookmarks",
-        component: Bookmarks
-    }, {
-        name: "BookmarkBorder",
-        component: BookmarkBorder
-    }, {
-        name: "AccountBalance",
-        component: AccountBalance
-    }, {
-        name: "AssuredWorkload",
-        component: AssuredWorkload
-    }, {
-        name: "AddHome",
-        component: AddHome
-    }, {
-        name: "Balcony",
-        component: Balcony
-    }, {
-        name: "Blinds",
-        component: Blinds
-    }, {
-        name: "BlindsClosed",
-        component: BlindsClosed
-    }, {
-        name: "ClearAll",
-        component: ClearAll
-    }, {
-        name: "AccessTime",
-        component: AccessTime
-    }, {
-        name: "Attribution",
-        component: Attribution
-    }, {
-        name: "Boy",
-        component: Boy
-    }, {
-        name: "BorderColor",
-        component: BorderColor
-    }, {
-        name: "Create",
-        component: Create
-    }, {
-        name: "Add",
-        component: Add
-    }, {
-        name: "AddCircle",
-        component: AddCircle
-    }, {
-        name: "ControlPoint",
-        component: ControlPoint
-    }, {
-        name: "AddCircleOutline",
-        component: AddCircleOutline
-    }, {
-        name: "AutoDelete",
-        component: AutoDelete
-    }, {
-        name: "BurstMode",
-        component: BurstMode
-    }, {
-        name: "AddPhotoAlternate",
-        component: AddPhotoAlternate
-    }, {
-        name: "Collections",
-        component: Collections
-    }, {
-        name: "CollectionsBookmark",
-        component: CollectionsBookmark
-    }, {
-        name: "AssignmentInd",
-        component: AssignmentInd
-    }, {
-        name: "Badge",
-        component: Badge
-    }, {
-        name: "AssignmentLate",
-        component: AssignmentLate
-    }, {
-        name: "AssignmentTurnedIn",
-        component: AssignmentTurnedIn
-    }, {
-        name: "AddLink",
-        component: AddLink
-    }, {
-        name: "Attachment",
-        component: Attachment
-    }, {
-        name: "AttachFile",
-        component: AttachFile
-    }, {
-        name: "AttachEmail",
-        component: AttachEmail
-    }, {
-        name: "AlignVerticalBottom",
-        component: AlignVerticalBottom
-    }, {
-        name: "BarChart",
-        component: BarChart
-    }, {
-        name: "Assessment",
-        component: Assessment
-    }, {
-        name: "BackupTable",
-        component: BackupTable
-    }, {
-        name: "BorderAll",
-        component: BorderAll
-    }, {
-        name: "Apps",
-        component: Apps
-    }, {
-        name: "Ballot",
-        component: Ballot
-    }, {
         name: "ArrowBackIosNew",
         component: ArrowBackIosNew
     }, {
@@ -180,25 +45,99 @@ export const icons: IconType[] = [
     }, {
         name: "CompareArrows",
         component: CompareArrows
+    },
+]
+
+export const userIcons: IconType[] = [
+    {
+        name: "AccountCircle",
+        component: AccountCircle
+    }, {
+        name: "AssignmentInd",
+        component: AssignmentInd
+    }, {
+        name: "ContactEmergency",
+        component: ContactEmergency
+    }, {
+        name: "ContactMail",
+        component: ContactMail
+    }, {
+        name: "ContactPage",
+        component: ContactPage
+    }, {
+        name: "Badge",
+        component: Badge
+    }, {
+        name: "Attribution",
+        component: Attribution
+    }, {
+        name: "Boy",
+        component: Boy
+    }, {
+        name: "Contacts",
+        component: Contacts
+    },
+]
+
+export const successIcons: IconType[] = [
+    {
+        name: "Check",
+        component: Check
+    }, {
+        name: "CheckBox",
+        component: CheckBox
+    }, {
+        name: "CheckBoxOutlineBlank",
+        component: CheckBoxOutlineBlank
+    }, {
+        name: "CheckCircle",
+        component: CheckCircle
+    }, {
+        name: "CheckCircleOutline",
+        component: CheckCircleOutline
+    }, {
+        name: "Beenhere",
+        component: Beenhere
+    }, {
+        name: "AssignmentTurnedIn",
+        component: AssignmentTurnedIn
+    },
+]
+
+export const warningIcons: IconType[] = [
+    {
+        name: "AssignmentLate",
+        component: AssignmentLate
+    },
+]
+
+export const contentIcons: IconType[] = [
+    {
+        name: "ContentPaste",
+        component: ContentPaste
+    }, {
+        name: "ContentPasteGo",
+        component: ContentPasteGo
+    }, {
+        name: "ContentPasteOff",
+        component: ContentPasteOff
+    }, {
+        name: "ContentPasteSearch",
+        component: ContentPasteSearch
+    }, {
+        name: "ContentCopy",
+        component: ContentCopy
     }, {
         name: "Assignment",
         component: Assignment
     }, {
         name: "Article",
         component: Article
-    }, {
-        name: "AspectRatio",
-        component: AspectRatio
-    }, {
-        name: "Autorenew",
-        component: Autorenew
-    }, {
-        name: "Cached",
-        component: Cached
-    }, {
-        name: "ChangeCircle",
-        component: ChangeCircle
-    }, {
+    },
+]
+
+export const cloudIcons: IconType[] = [
+    {
         name: "Backup",
         component: Backup
     }, {
@@ -211,30 +150,13 @@ export const icons: IconType[] = [
         name: "CloudUpload",
         component: CloudUpload
     }, {
-        name: "Beenhere",
-        component: Beenhere
-    }, {
-        name: "Block",
-        component: Block
-    }, {
-        name: "Bolt",
-        component: Bolt
-    }, {
         name: "BrowserUpdated",
         component: BrowserUpdated
-    }, {
-        name: "Brush",
-        component: Brush
-    }, {
-        name: "BuildCircle",
-        component: BuildCircle
-    }, {
-        name: "Build",
-        component: Build
-    }, {
-        name: "Cancel",
-        component: Cancel
-    }, {
+    },
+]
+
+export const calendarIcons: IconType[] = [
+    {
         name: "DateRange",
         component: DateRange
     }, {
@@ -252,9 +174,120 @@ export const icons: IconType[] = [
     }, {
         name: "CalendarViewWeek",
         component: CalendarViewWeek
+    },
+]
+
+export const bookIcons: IconType[] = [
+    {
+        name: "AutoStories",
+        component: AutoStories
+    }, {
+        name: "ChromeReaderMode",
+        component: ChromeReaderMode
+    }, {
+        name: "Bookmark",
+        component: Bookmark
+    }, {
+        name: "BookmarkAdd",
+        component: BookmarkAdd
+    }, {
+        name: "BookmarkAdded",
+        component: BookmarkAdded
+    }, {
+        name: "BookmarkRemove",
+        component: BookmarkRemove
+    }, {
+        name: "Bookmarks",
+        component: Bookmarks
+    }, {
+        name: "BookmarkBorder",
+        component: BookmarkBorder
+    }, {
+        name: "CollectionsBookmark",
+        component: CollectionsBookmark
+    },
+]
+
+export const CRUDIcons: IconType[] = [
+    {
+        name: "Add",
+        component: Add
+    }, {
+        name: "AddCircle",
+        component: AddCircle
+    }, {
+        name: "ControlPoint",
+        component: ControlPoint
+    }, {
+        name: "AddCircleOutline",
+        component: AddCircleOutline
+    }, {
+        name: "AutoDelete",
+        component: AutoDelete
+    }, {
+        name: "BorderColor",
+        component: BorderColor
+    }, {
+        name: "Create",
+        component: Create
+    }, {
+        name: "Cancel",
+        component: Cancel
     }, {
         name: "CancelPresentation",
         component: CancelPresentation
+    }, {
+        name: "CleaningServices",
+        component: CleaningServices
+    }, {
+        name: "Clear",
+        component: Clear
+    }, {
+        name: "Close",
+        component: Close
+    }, {
+        name: "Commit",
+        component: Commit
+    }, {
+        name: "Compress",
+        component: Compress
+    }, {
+        name: "CopyAll",
+        component: CopyAll
+    }, {
+        name: "Autorenew",
+        component: Autorenew
+    }, {
+        name: "Cached",
+        component: Cached
+    }, {
+        name: "ChangeCircle",
+        component: ChangeCircle
+    }, {
+        name: "Block",
+        component: Block
+    },
+]
+
+export const imageIcons: IconType[] = [
+    {
+        name: "Collections",
+        component: Collections
+    }, {
+        name: "BurstMode",
+        component: BurstMode
+    }, {
+        name: "AddPhotoAlternate",
+        component: AddPhotoAlternate
+    }, {
+        name: "AspectRatio",
+        component: AspectRatio
+    }, {
+        name: "CropOriginal",
+        component: CropOriginal
+    }, {
+        name: "CropFree",
+        component: CropFree
     }, {
         name: "CenterFocusStrong",
         component: CenterFocusStrong
@@ -262,9 +295,56 @@ export const icons: IconType[] = [
         name: "CenterFocusWeak",
         component: CenterFocusWeak
     }, {
-        name: "Chair",
-        component: Chair
+        name: "CreateNewFolder",
+        component: CreateNewFolder
+    },
+]
+
+export const displayIcons: IconType[] = [
+    {
+        name: "AlignVerticalBottom",
+        component: AlignVerticalBottom
     }, {
+        name: "BarChart",
+        component: BarChart
+    }, {
+        name: "Assessment",
+        component: Assessment
+    }, {
+        name: "BackupTable",
+        component: BackupTable
+    }, {
+        name: "BorderAll",
+        component: BorderAll
+    }, {
+        name: "Apps",
+        component: Apps
+    }, {
+        name: "Ballot",
+        component: Ballot
+    }, {
+        name: "Dashboard",
+        component: Dashboard
+    }, {
+        name: "DashboardCustomize",
+        component: DashboardCustomize
+    }, {
+        name: "Dataset",
+        component: Dataset
+    }, {
+        name: "DatasetLinked",
+        component: DatasetLinked
+    }, {
+        name: "ClearAll",
+        component: ClearAll
+    }, {
+        name: "Computer",
+        component: Computer
+    },
+]
+
+export const commentsIcons: IconType[] = [
+    {
         name: "CommentBank",
         component: CommentBank
     }, {
@@ -283,114 +363,101 @@ export const icons: IconType[] = [
         name: "ChatBubbleOutline",
         component: ChatBubbleOutline
     }, {
-        name: "Check",
-        component: Check
-    }, {
-        name: "CheckBox",
-        component: CheckBox
-    }, {
-        name: "CheckBoxOutlineBlank",
-        component: CheckBoxOutlineBlank
-    }, {
-        name: "CheckCircle",
-        component: CheckCircle
-    }, {
-        name: "CheckCircleOutline",
-        component: CheckCircleOutline
-    }, {
-        name: "CleaningServices",
-        component: CleaningServices
-    }, {
-        name: "Clear",
-        component: Clear
-    }, {
-        name: "Close",
-        component: Close
-    }, {
+        name: "CompassCalibration",
+        component: CompassCalibration
+    },
+]
+
+export const colorIcons: IconType[] = [
+    {
         name: "ColorLens",
         component: ColorLens
     }, {
         name: "Colorize",
         component: Colorize
     }, {
-        name: "Commit",
-        component: Commit
+        name: "Brush",
+        component: Brush
+    },
+]
+
+export const libraryIcons: IconType[] = [
+    {
+        name: "AccountBalance",
+        component: AccountBalance
     }, {
-        name: "Compress",
-        component: Compress
+        name: "AssuredWorkload",
+        component: AssuredWorkload
     }, {
-        name: "Computer",
-        component: Computer
+        name: "AddHome",
+        component: AddHome
     }, {
-        name: "CompassCalibration",
-        component: CompassCalibration
+        name: "Balcony",
+        component: Balcony
     }, {
-        name: "ContactEmergency",
-        component: ContactEmergency
+        name: "Blinds",
+        component: Blinds
     }, {
-        name: "ContactMail",
-        component: ContactMail
-    }, {
-        name: "ContactPage",
-        component: ContactPage
-    }, {
-        name: "ContactSupport",
-        component: ContactSupport
-    }, {
-        name: "Contacts",
-        component: Contacts
-    }, {
-        name: "ContentCopy",
-        component: ContentCopy
-    }, {
-        name: "ContentPaste",
-        component: ContentPaste
-    }, {
-        name: "ContentPasteGo",
-        component: ContentPasteGo
-    }, {
-        name: "ContentPasteOff",
-        component: ContentPasteOff
-    }, {
-        name: "ContentPasteSearch",
-        component: ContentPasteSearch
-    }, {
-        name: "Cookie",
-        component: Cookie
-    }, {
-        name: "CopyAll",
-        component: CopyAll
+        name: "BlindsClosed",
+        component: BlindsClosed
     }, {
         name: "CorporateFare",
         component: CorporateFare
+    },
+]
+
+export const linksIcons: IconType[] = [
+    {
+        name: "AddLink",
+        component: AddLink
     }, {
-        name: "CreateNewFolder",
-        component: CreateNewFolder
+        name: "Attachment",
+        component: Attachment
     }, {
-        name: "CropFree",
-        component: CropFree
+        name: "AttachFile",
+        component: AttachFile
     }, {
-        name: "CropOriginal",
-        component: CropOriginal
-    }, {
-        name: "Dashboard",
-        component: Dashboard
-    }, {
-        name: "DashboardCustomize",
-        component: DashboardCustomize
-    }, {
+        name: "AttachEmail",
+        component: AttachEmail
+    },
+]
+
+export const statsImages: IconType[] = [
+    {
         name: "DataSaverOff",
         component: DataSaverOff
     }, {
         name: "DataSaverOn",
         component: DataSaverOn
-    }, {
-        name: "Dataset",
-        component: Dataset
-    }, {
-        name: "DatasetLinked",
-        component: DatasetLinked
     },
+]
+
+export const settingsIcons = [
+    {
+        name: "AccessTime",
+        component: AccessTime
+    }, {
+        name: "Bolt",
+        component: Bolt
+    }, {
+        name: "BuildCircle",
+        component: BuildCircle
+    }, {
+        name: "Build",
+        component: Build
+    }, {
+        name: "ContactSupport",
+        component: ContactSupport
+    }, {
+        name: "Cookie",
+        component: Cookie
+    }, {
+        name: "Chair",
+        component: Chair
+    },
+]
+
+export const icons: IconType[] = [
 ]
 
 export * as mui from "@mui/material"
