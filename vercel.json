@@ -4,5 +4,16 @@
     "devCommand": "npm run storybook",
     "installCommand": "npm install",
     "framework": null,
-    "outputDirectory": "./storybook-static"
+    "outputDirectory": "./storybook-static",
+    "headers": [
+        {
+            "source": "/(.*)",
+            "headers": [
+                {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                }
+            ]
+        }
+    ]
 }
