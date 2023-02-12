@@ -25,8 +25,8 @@ export const Default = Template.bind({})
 Default.args = {
     color: "primary",
     size: "small",
-    label: "Label",
-    placeholder: "Placeholder",
+    label: "Имейл",
+    placeholder: "Въведи текст",
     fullWidth: false,
     multiline: false,
     required: false,
