@@ -8,14 +8,16 @@ export const muiButtonStyles: Components<MuiTheme>["MuiButton"] = {
             props: { size: "small" },
             style: {
                 borderRadius: "17px",
-                paddingLeft: "16px",
-                paddingRight: "16px",
+                paddingLeft: "14px",
+                paddingRight: "14px",
                 // fontSize: "13px",
                 [`.${buttonClasses.startIcon}`]: {
-                    marginLeft: "-8px",
+                    marginLeft: "-7px",
+                    marginRight: "6px",
                 },
                 [`.${buttonClasses.endIcon}`]: {
-                    marginRight: "-8px",
+                    marginLeft: "6px",
+                    marginRight: "-7px",
                 },
             }
         },
@@ -28,8 +30,10 @@ export const muiButtonStyles: Components<MuiTheme>["MuiButton"] = {
                 // fontSize: "14px",
                 [`.${buttonClasses.startIcon}`]: {
                     marginLeft: "-10px",
+                    marginRight: "9px",
                 },
                 [`.${buttonClasses.endIcon}`]: {
+                    marginLeft: "9px",
                     marginRight: "-10px",
                 },
             }
@@ -60,8 +64,4 @@ export const muiButtonStyles: Components<MuiTheme>["MuiButton"] = {
             },
         })
     },
-    defaultProps: {
-        size: "large",
-    },
-
 }
