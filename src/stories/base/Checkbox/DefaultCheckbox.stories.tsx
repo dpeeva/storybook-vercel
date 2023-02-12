@@ -1,10 +1,11 @@
+import { CheckboxProps } from "@mui/material"
 import type { Meta, StoryFn } from "@storybook/react"
-import { mui } from "../../../mui"
+import { MuiCheckbox } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
     title: "Base/Checkbox",
-    component: mui.Checkbox,
+    component: MuiCheckbox,
     parameters: {
         layout: "fullscreen"
     },
@@ -19,7 +20,7 @@ export default {
     },
 } as Meta
 
-type Props = mui.CheckboxProps & {
+type Props = CheckboxProps & {
     label: string
 }
 
@@ -32,7 +33,7 @@ const Template: StoryFn = ({
     disabled,
     label
 }) => (
-    <mui.Checkbox
+    <MuiCheckbox
         {...{ color, size, defaultChecked, indeterminate, disableRipple, disabled }}
         inputProps={{ "aria-label": label }} // Label is mandatory for all form elements, for accessibiity reasons. When label element is not available, aria-label attribute should be set.
     />

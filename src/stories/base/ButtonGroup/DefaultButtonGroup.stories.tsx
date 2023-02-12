@@ -1,10 +1,10 @@
 import type { Meta, StoryFn } from "@storybook/react"
-import { mui } from "../../../mui"
+import { MuiButton, MuiButtonGroup } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
     title: "Base/ButtonGroup",
-    component: mui.ButtonGroup,
+    component: MuiButtonGroup,
     parameters: {
         layout: "fullscreen"
     },
@@ -21,13 +21,13 @@ const Template: StoryFn = ({
     disabled,
     text
 }) => {
-    return <mui.ButtonGroup
+    return <MuiButtonGroup
         {...{ variant, color, size, orientation, disabled }}
     >
-        <mui.Button>{text}</mui.Button>
-        <mui.Button>{text}</mui.Button>
-        <mui.Button>{text}</mui.Button>
-    </mui.ButtonGroup>
+        <MuiButton>{text}</MuiButton>
+        <MuiButton>{text}</MuiButton>
+        <MuiButton>{text}</MuiButton>
+    </MuiButtonGroup>
 }
 
 export const Default = Template.bind({})

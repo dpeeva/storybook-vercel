@@ -1,11 +1,12 @@
 import type { Meta, StoryFn } from "@storybook/react"
-import { mui } from "../../../mui"
+import { MuiAutocomplete, MuiBox, MuiMenuItem, MuiTextField } from "../../../mui"
 import { items } from "."
 import { argTypes } from "./argTypes"
+import { AutocompleteProps, TextFieldProps } from "@mui/material"
 
 export default {
     title: "Base/Autocomplete",
-    component: mui.Autocomplete,
+    component: MuiAutocomplete,
     parameters: {
         layout: "fullscreen"
     },
@@ -27,8 +28,8 @@ export default {
     },
 } as Meta
 
-type Props = mui.AutocompleteProps<unknown, boolean, boolean, boolean, "div"> & {
-    variant: mui.TextFieldProps["variant"]
+type Props = AutocompleteProps<unknown, boolean, boolean, boolean, "div"> & {
+    variant: TextFieldProps["variant"]
     label: string
     placeholder: string
 }
@@ -48,21 +49,21 @@ const Template: StoryFn = ({
     label,
     placeholder
 }) => (
-    <mui.Box sx={{ width: "200px" }}>
-        <mui.Autocomplete
+    <MuiBox sx={{ width: "200px" }}>
+        <MuiAutocomplete
             {...{ color, size, multiple, freeSolo, limitTags, disablePortal, disableClearable, loading, loadingText, disabled }}
             fullWidth
             options={items}
             onChange={() => { }}
             getOptionLabel={(option: any) => option.name}
             renderOption={(props, option: any) => (
-                <mui.MenuItem {...props} key={option.id}>
+                <MuiMenuItem {...props} key={option.id}>
                     {option.name}
-                </mui.MenuItem>
+                </MuiMenuItem>
             )}
             renderInput={(params) =>
-                <mui.TextField
-                    color={color as mui.TextFieldProps["color"]}
+                <MuiTextField
+                    color={color as TextFieldProps["color"]}
                     {...params}
                     variant={variant}
                     label={label}
@@ -70,7 +71,7 @@ const Template: StoryFn = ({
                 />
             }
         />
-    </mui.Box>
+    </MuiBox>
 )
 
 export const Default = Template.bind({})

@@ -1,10 +1,12 @@
 import type { Meta, StoryFn } from "@storybook/react"
-import { mui, muiIcons } from "../../../mui"
+import { CalendarTodayOutlined } from "@mui/icons-material"
+import { FilledInputProps } from "@mui/material"
+import { MuiFilledInput, MuiInputAdornment } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
     title: "Base/FilledInput",
-    component: mui.FilledInput,
+    component: MuiFilledInput,
     parameters: {
         layout: "fullscreen"
     },
@@ -13,16 +15,16 @@ export default {
     },
 } as Meta
 
-type Props = mui.FilledInputProps & {
+type Props = FilledInputProps & {
 }
 
 const Template: StoryFn = (args: Props) => (
-    <mui.FilledInput
+    <MuiFilledInput
         {...args}
         endAdornment={
-            <mui.InputAdornment position="end">
-                <muiIcons.CalendarTodayOutlined fontSize="inherit" />
-            </mui.InputAdornment>
+            <MuiInputAdornment position="end">
+                <CalendarTodayOutlined fontSize="inherit" />
+            </MuiInputAdornment>
         }
     />
 )

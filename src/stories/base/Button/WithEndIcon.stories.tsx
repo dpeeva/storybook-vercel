@@ -1,10 +1,12 @@
 import type { Meta, StoryFn } from "@storybook/react"
-import { mui, muiIcons } from "../../../mui"
+import { AddCircle } from "@mui/icons-material"
+import { ButtonProps } from "@mui/material"
+import { MuiButton } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
     title: "Base/Button",
-    component: mui.Button,
+    component: MuiButton,
     parameters: {
         layout: "fullscreen"
     },
@@ -17,7 +19,7 @@ export default {
     },
 } as Meta
 
-type Props = mui.ButtonProps & {
+type Props = ButtonProps & {
     text?: string // TODO: check why not mandatory
 }
 
@@ -28,10 +30,10 @@ const Template: StoryFn = ({
     disabled,
     text
 }: Props) => (
-    <mui.Button
+    <MuiButton
         {...{ variant, color, size, disabled }}
-        endIcon={<muiIcons.AddCircle />}
-    >{text}</mui.Button>
+        endIcon={<AddCircle />}
+    >{text}</MuiButton>
 )
 
 export const WithEndIcon = Template.bind({})

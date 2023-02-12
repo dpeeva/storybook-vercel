@@ -1,11 +1,13 @@
 import type { Meta, StoryFn } from "@storybook/react"
-import { mui, muiIcons } from "../../../mui"
+import { Close } from "@mui/icons-material"
+import { AutocompleteProps, TextFieldProps } from "@mui/material"
+import { MuiAutocomplete, MuiBox, MuiChip, MuiMenuItem, MuiTextField } from "../../../mui"
 import { items } from "."
 import { argTypes } from "./argTypes"
 
 export default {
     title: "Base/Autocomplete",
-    component: mui.Autocomplete,
+    component: MuiAutocomplete,
     parameters: {
         layout: "fullscreen"
     },
@@ -27,8 +29,8 @@ export default {
     },
 } as Meta
 
-type Props = mui.AutocompleteProps<unknown, boolean, boolean, boolean, "div"> & {
-    variant: mui.TextFieldProps["variant"]
+type Props = AutocompleteProps<unknown, boolean, boolean, boolean, "div"> & {
+    variant: TextFieldProps["variant"]
     label: string
     placeholder: string
 }
@@ -48,8 +50,8 @@ const Template: StoryFn = ({
     label,
     placeholder
 }) => (
-    <mui.Box sx={{ width: "200px" }}>
-        <mui.Autocomplete
+    <MuiBox sx={{ width: "200px" }}>
+        <MuiAutocomplete
             {...{ color, size, multiple, freeSolo, limitTags, disablePortal, disableClearable, loading, loadingText, disabled }}
             fullWidth
             options={items}
@@ -57,17 +59,17 @@ const Template: StoryFn = ({
             onOpen={() => { }} // Callback fired when the component requests to be opened.
             onClose={() => { }} // Callback fired when the component requests to be closed.
             getOptionLabel={(option: any) => option.name}
-            clearIcon={<muiIcons.Close />}
+            clearIcon={<Close />}
             componentsProps={{
                 clearIndicator: { size: "small" }
             }}
             renderOption={(props, option: any) => (
-                <mui.MenuItem {...props}>
+                <MuiMenuItem {...props}>
                     {option.name}
-                </mui.MenuItem>
+                </MuiMenuItem>
             )}
             renderInput={(params) =>
-                <mui.TextField
+                <MuiTextField
                     {...params}
                     variant={variant}
                     label={label}
@@ -76,7 +78,7 @@ const Template: StoryFn = ({
             }
             renderTags={(value: readonly any[], getTagProps) => (
                 value.map((option: any, i: number) => (
-                    <mui.Chip
+                    <MuiChip
                         variant="outlined"
                         label={option.name}
                         size="small"
@@ -85,7 +87,7 @@ const Template: StoryFn = ({
                 )
             )}
         />
-    </mui.Box>
+    </MuiBox>
 )
 
 export const MultiWithChips = Template.bind({})

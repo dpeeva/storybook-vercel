@@ -1,11 +1,11 @@
 import type { Meta, StoryFn } from "@storybook/react"
-import { mui } from "../../../mui"
 import { FilledInputProps } from "@mui/material"
+import { MuiFilledInput } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
     title: "Base/FilledInput",
-    component: mui.FilledInput,
+    component: MuiFilledInput,
     parameters: {
         layout: "fullscreen"
     },
@@ -18,7 +18,7 @@ type Props = FilledInputProps & {
 }
 
 const Template: StoryFn = (args: Props) => (
-    <mui.FilledInput {...args} />
+    <MuiFilledInput {...args} />
 )
 
 export const Default = Template.bind({})

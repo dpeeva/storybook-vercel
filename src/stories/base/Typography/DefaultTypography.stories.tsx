@@ -1,10 +1,11 @@
 import type { Meta, StoryFn } from "@storybook/react"
-import { mui } from "../../../mui"
+import { TypographyProps } from "@mui/material"
+import { MuiTypography } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
     title: "Base/Typography",
-    component: mui.Typography,
+    component: MuiTypography,
     parameters: {
         layout: "fullscreen"
     },
@@ -17,10 +18,10 @@ export default {
 } as Meta
 
 
-const Template: StoryFn = (args: mui.TypographyProps) => (
-    <mui.Typography variant="h1" {...args}>
+const Template: StoryFn = (args: TypographyProps) => (
+    <MuiTypography variant="h1" {...args}>
         Switch between Typography variants
-    </mui.Typography>
+    </MuiTypography>
 )
 
 export const Default = Template.bind({})

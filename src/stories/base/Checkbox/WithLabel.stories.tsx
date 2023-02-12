@@ -1,10 +1,11 @@
 import type { Meta, StoryFn } from "@storybook/react"
-import { mui } from "../../../mui"
+import { CheckboxProps } from "@mui/material"
+import { MuiCheckbox, MuiFormControlLabel } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
     title: "Base/Checkbox",
-    component: mui.Checkbox,
+    component: MuiCheckbox,
     parameters: {
         layout: "fullscreen"
     },
@@ -18,7 +19,7 @@ export default {
     },
 } as Meta
 
-type Props = mui.CheckboxProps & {
+type Props = CheckboxProps & {
     label: string
 }
 
@@ -31,9 +32,9 @@ const Template: StoryFn = ({
     disabled,
     label
 }) => (
-    <mui.FormControlLabel
+    <MuiFormControlLabel
         control={
-            <mui.Checkbox
+            <MuiCheckbox
                 {...{ color, size, defaultChecked, indeterminate, disableRipple, disabled }}
             />}
         label={label}

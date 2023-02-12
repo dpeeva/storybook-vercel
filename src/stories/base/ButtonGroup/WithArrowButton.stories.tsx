@@ -1,10 +1,11 @@
 import type { Meta, StoryFn } from "@storybook/react"
-import { mui, muiIcons } from "../../../mui"
+import { ArrowDropDown } from "@mui/icons-material"
+import { MuiButton, MuiButtonGroup } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
     title: "Base/ButtonGroup",
-    component: mui.ButtonGroup,
+    component: MuiButtonGroup,
     parameters: {
         layout: "fullscreen"
     },
@@ -21,12 +22,12 @@ const Template: StoryFn = ({
     disabled,
     text
 }) => (
-    <mui.ButtonGroup {...{ variant, color, size, orientation, disabled }}>
-        <mui.Button>{text}</mui.Button>
-        <mui.Button>
-            <muiIcons.ArrowDropDown />
-        </mui.Button>
-    </mui.ButtonGroup>
+    <MuiButtonGroup {...{ variant, color, size, orientation, disabled }}>
+        <MuiButton>{text}</MuiButton>
+        <MuiButton>
+            <ArrowDropDown />
+        </MuiButton>
+    </MuiButtonGroup>
 )
 
 export const WithArrowButton = Template.bind({})
