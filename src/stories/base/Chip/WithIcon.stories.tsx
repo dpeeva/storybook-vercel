@@ -21,7 +21,7 @@ type Props = ChipProps & {
 const Template: StoryFn = (args: Props) => (
     <MuiChip
         {...args}
-        icon={<ArrowBack />}
+        icon={<ArrowBack fontSize="small" />}
     />
 )
 
