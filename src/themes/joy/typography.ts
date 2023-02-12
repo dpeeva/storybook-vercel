@@ -62,7 +62,7 @@ export const typography: TypographyOptions = {
         fontWeight: 600,
     },
     caption: {
-        fontSize: "16px",
+        fontSize: "12px",
         lineHeight: 1,
         fontWeight: 500,
     },
