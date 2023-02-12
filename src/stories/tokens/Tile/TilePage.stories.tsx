@@ -4,7 +4,7 @@ import { TilePage } from "./TilePage"
 
 
 export default {
-    title: "Sample/Tile/Page",
+    title: "Tokens/Tile/Page",
     component: TilePage,
     parameters: {
         layout: "fullscreen"
