@@ -1,6 +1,7 @@
 import { Components } from "@mui/material"
 import { muiAccordionActionsStyles } from "./muiAccordionActionsStyles"
 import { muiAccordionDetailsStyles } from "./muiAccordionDetailsStyles"
+import { muiAccordionStyles } from "./muiAccordionStyles"
 import { muiAccordionSummaryStyles } from "./muiAccordionSummaryStyles"
 import { muiAlertStyles } from "./muiAlertStyles"
 import { muiAlertTitleStyles } from "./muiAlertTitleStyles"
@@ -112,6 +113,7 @@ import { muiTypographyStyles } from "./muiTypographyStyles"
 
 
 export const components: Components = {
+    MuiAccordion: muiAccordionStyles,
     MuiAccordionActions: muiAccordionActionsStyles,
     MuiAccordionDetails: muiAccordionDetailsStyles,
     MuiAccordionSummary: muiAccordionSummaryStyles,
