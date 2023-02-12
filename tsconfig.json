@@ -23,7 +23,8 @@
             "@/*": [
                 "./src/*"
             ]
-        }
+        },
+        "sourceMap": true,
     },
     "include": [
         "next-env.d.ts",
