@@ -3,5 +3,8 @@ import { MuiTheme } from "../../../typings"
 
 export const muiDialogActionsStyles: Components<MuiTheme>["MuiDialogActions"] = {
     styleOverrides: {
+        root: {
+            padding: "16px",
+        }
     }
 }
