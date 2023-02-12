@@ -14,7 +14,6 @@ export default {
         // Additional props:
         label: {
             control: { type: "text" },
-            defaultValue: "Label",
         }
     },
 } as Meta
@@ -49,4 +48,5 @@ WithLabel.args = {
     indeterminate: false,
     disableRipple: false,
     disabled: false,
+    label: "Имейл",
 }

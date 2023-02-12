@@ -14,7 +14,6 @@ export default {
         // Additional props: 
         label: {
             control: { type: "text" },
-            defaultValue: "Label",
             table: { disable: true },
         }
     },
@@ -47,4 +46,5 @@ Default.args = {
     indeterminate: false,
     disableRipple: false,
     disabled: false,
+    label: "Имейл",
 }
