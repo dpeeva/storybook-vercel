@@ -70,7 +70,7 @@ export const TilePage: React.FunctionComponent<Props> = ({
                     text
                 </Typography>
                 <Typography variant="caption" color="inherit">
-                    "primary"
+                    primary
                 </Typography>
                 <Typography variant="h6" color="inherit">
                     {`${themes[mode].palette.text.primary}`}
@@ -85,7 +85,7 @@ export const TilePage: React.FunctionComponent<Props> = ({
                     text
                 </Typography>
                 <Typography variant="caption" color="inherit">
-                    "secondary"
+                    secondary
                 </Typography>
                 <Typography variant="h6" color="inherit">
                     {`${themes[mode].palette.text.secondary}`}
@@ -103,7 +103,7 @@ export const TilePage: React.FunctionComponent<Props> = ({
                     background
                 </Typography>
                 <Typography variant="caption" color="inherit">
-                    "default"
+                    default
                 </Typography>
                 <Typography variant="h6" color="inherit">
                     {`${themes[mode].palette.common.white}`}
@@ -118,7 +118,7 @@ export const TilePage: React.FunctionComponent<Props> = ({
                     background
                 </Typography>
                 <Typography variant="caption" color="inherit">
-                    "paper"
+                    paper
                 </Typography>
                 <Typography variant="h6" color="inherit">
                     {`${themes[mode].palette.common.white}`}
@@ -136,7 +136,7 @@ export const TilePage: React.FunctionComponent<Props> = ({
                     common
                 </Typography>
                 <Typography variant="caption" color="inherit">
-                    "white"
+                    white
                 </Typography>
                 <Typography variant="h6" color="inherit">
                     {`${themes[mode].palette.common.white}`}
@@ -152,7 +152,7 @@ export const TilePage: React.FunctionComponent<Props> = ({
                     common
                 </Typography>
                 <Typography variant="caption" color="inherit">
-                    "black"
+                    black
                 </Typography>
                 <Typography variant="h6" color="inherit">
                     {`${themes[mode].palette.common.black}`}
