@@ -4,7 +4,7 @@ export const typography: TypographyOptions = {
     allVariants: {
         color: "#260e1e",
     },
-    fontFamily: ["Kometa", "Montserrat", "sans-serif"].join(", "),
+    fontFamily: ["Montserrat Alternates", "Kometa", "sans-serif"].join(", "),
     body1: {
         fontSize: "18px",
         lineHeight: 1.6,
@@ -46,8 +46,10 @@ export const typography: TypographyOptions = {
         fontWeight: 700,
     },
     button: {
+        lineHeight: "1.693em",
         letterSpacing: 0.25,
-        fontWeight: 400,
+        fontWeight: 500,
+        textTransform: "none",
     },
     subtitle1: {
         fontSize: "18px",
