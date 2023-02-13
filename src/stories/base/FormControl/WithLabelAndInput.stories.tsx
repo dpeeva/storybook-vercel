@@ -60,5 +60,5 @@ WithLabelAndInput.args = {
     error: false,
     disabled: false,
     label: "Имейл",
-    placeholder: "Въведи текст",
+    placeholder: "Въведете текст",
 }

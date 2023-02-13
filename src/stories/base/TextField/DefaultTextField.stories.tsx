@@ -1,11 +1,11 @@
 import type { Meta, StoryFn } from "@storybook/react"
-import { FilledInputProps } from "@mui/material"
-import { MuiFilledInput } from "../../../mui"
+import { TextFieldProps } from "@mui/material"
+import { MuiBox, MuiTextField } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/FilledInput",
-    component: MuiFilledInput,
+    title: "Base/TextField",
+    component: MuiTextField,
     parameters: {
         layout: "fullscreen"
     },
@@ -14,24 +14,26 @@ export default {
     },
 } as Meta
 
-type Props = FilledInputProps & {
+type Props = TextFieldProps & {
 }
 
 const Template: StoryFn = (args: Props) => (
-    <MuiFilledInput {...args} />
+    <MuiBox sx={{ width: "200px" }}>
+        <MuiTextField {...args} />
+    </MuiBox>
 )
 
 export const Default = Template.bind({})
 Default.args = {
-    color: "primary",
+    variant: "outlined", // defaults to outlined when not set
+    color: "primary", // defaults to primary when not set
     size: "small",
     label: "Имейл",
     placeholder: "Въведете текст",
-    fullWidth: false,
+    helperText: "Помощен текст",
+    fullWidth: true,
     multiline: false,
     required: false,
     error: false,
-    hiddenLabel: false,
-    disableUnderline: false,
     disabled: false,
 }

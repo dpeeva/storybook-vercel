@@ -1,19 +1,25 @@
 import { baseColors } from "../../constants"
 
 export const argTypes = {
+    variant: {
+        options: ["standard", "outlined", "filled"],
+        control: { type: "radio" },
+    },
     color: {
-        options: [...baseColors, "default"],
+        options: baseColors,
         control: { type: "select" },
     },
     size: {
-        options: ["small", "medium"],
+        options: ["xs", "small", "medium"],
         control: { type: "radio" },
     },
     label: {
         control: { type: "text" },
-        description: "label attribute",
     },
     placeholder: {
+        control: { type: "text" },
+    },
+    helperText: {
         control: { type: "text" },
     },
     fullWidth: {
@@ -26,12 +32,6 @@ export const argTypes = {
         control: { type: "boolean" },
     },
     error: {
-        control: { type: "boolean" },
-    },
-    hiddenLabel: {
-        control: { type: "boolean" },
-    },
-    disableUnderline: {
         control: { type: "boolean" },
     },
     disabled: {

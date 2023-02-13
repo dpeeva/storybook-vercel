@@ -19,11 +19,9 @@ export default {
         },
         label: {
             control: { type: "text" },
-            defaultValue: "Label",
         },
         placeholder: {
             control: { type: "text" },
-            defaultValue: "Please select",
         },
     },
 } as Meta
@@ -86,4 +84,6 @@ Default.args = {
     loading: false,
     loadingText: "Loading...",
     disabled: false,
+    label: "Имейл",
+    placeholder: "Моля, изберете",
 }

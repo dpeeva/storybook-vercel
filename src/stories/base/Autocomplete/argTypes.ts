@@ -1,5 +1,3 @@
-/* istanbul ignore file */
-
 import { baseColors } from "../../constants"
 
 export const argTypes = {

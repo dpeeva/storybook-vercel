@@ -34,7 +34,7 @@ WithStartAdornment.args = {
     color: "primary",
     size: "small",
     label: "Имейл",
-    placeholder: "Въведи текст",
+    placeholder: "Въведете текст",
     fullWidth: false,
     multiline: false,
     required: false,

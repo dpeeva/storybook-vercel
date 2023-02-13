@@ -2,16 +2,16 @@ import { baseColors } from "../../constants"
 
 export const argTypes = {
     color: {
-        options: [...baseColors, "default"],
+        options: baseColors,
         control: { type: "select" },
     },
     size: {
-        options: ["small", "medium"],
+        options: ["xs", "small", "medium"],
         control: { type: "radio" },
     },
     label: {
         control: { type: "text" },
-        description: "label attribute",
+        description: "The label of the input. It is only used for layout. The actual labelling is handled by InputLabel",
     },
     placeholder: {
         control: { type: "text" },
@@ -26,12 +26,6 @@ export const argTypes = {
         control: { type: "boolean" },
     },
     error: {
-        control: { type: "boolean" },
-    },
-    hiddenLabel: {
-        control: { type: "boolean" },
-    },
-    disableUnderline: {
         control: { type: "boolean" },
     },
     disabled: {

@@ -1,12 +1,12 @@
 import type { Meta, StoryFn } from "@storybook/react"
 import { CalendarTodayOutlined } from "@mui/icons-material"
-import { FilledInputProps } from "@mui/material"
-import { MuiFilledInput, MuiInputAdornment } from "../../../mui"
+import { InputProps } from "@mui/material"
+import { MuiInput, MuiInputAdornment } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/FilledInput",
-    component: MuiFilledInput,
+    title: "Base/Input",
+    component: MuiInput,
     parameters: {
         layout: "fullscreen"
     },
@@ -15,31 +15,30 @@ export default {
     },
 } as Meta
 
-type Props = FilledInputProps & {
+type Props = InputProps & {
 }
 
 const Template: StoryFn = (args: Props) => (
-    <MuiFilledInput
+    <MuiInput
         {...args}
-        endAdornment={
-            <MuiInputAdornment position="end">
+        inputProps={{ "aria-label": "Имейл" }}
+        startAdornment={
+            <MuiInputAdornment position={"start"}>
                 <CalendarTodayOutlined fontSize="inherit" />
             </MuiInputAdornment>
         }
     />
 )
 
-export const WithEndAdornment = Template.bind({})
-WithEndAdornment.args = {
-    color: "primary",
+export const WithStartAdornment = Template.bind({})
+WithStartAdornment.args = {
+    color: "primary", // defaults to primary when not set
     size: "small",
-    label: "Имейл",
     placeholder: "Въведете текст",
     fullWidth: false,
     multiline: false,
     required: false,
     error: false,
-    hiddenLabel: false,
     disableUnderline: false,
     disabled: false,
 }
