@@ -34,7 +34,7 @@ export const palette: PaletteOptions = {
     warning: {
         main: "#F9C050",
         light: "#facc73", // auto-generated
-        dark: "#F7B32B", // auto-generated
+        dark: "#F6A444", // "#F7B32B", // auto-generated
     },
     text: {
         primary: "#343F3E",
