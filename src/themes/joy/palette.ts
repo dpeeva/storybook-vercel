@@ -18,8 +18,8 @@ export const palette: PaletteOptions = {
         main: "#F71735",
     },
     success: {
-        main: "#7BD3C9",
-        dark: "#5DC9C0",
+        main: "#9CB871",
+        contrastText: "#fff",
     },
     warning: {
         main: "#EC4E20",

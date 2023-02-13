@@ -4,7 +4,7 @@ import { TilePage } from "./TilePage"
 
 
 export default {
-    title: "Tokens/Tile/Page",
+    title: "Tokens/Palette",
     component: TilePage,
     parameters: {
         layout: "fullscreen"
@@ -15,4 +15,4 @@ export default {
 
 const Template: StoryFn = ({ }) => <TilePage />
 
-export const Page = Template.bind({})
+export const Tiles = Template.bind({})

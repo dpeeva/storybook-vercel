@@ -18,6 +18,6 @@ export const Tile = styled(Box)<Props>(({
     padding: "10px 20px",
     backgroundColor: bgcolor,
     color: color,
-    minWidth: "150px",
+    minWidth: "170px",
     maxWidth: "33%",
 }))
