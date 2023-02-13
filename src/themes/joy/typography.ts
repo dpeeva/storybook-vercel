@@ -11,7 +11,7 @@ export const typography: TypographyOptions = {
         fontWeight: 400,
     },
     body2: {
-        fontSize: "14px",
+        fontSize: "12px",
         lineHeight: 1.55,
         fontWeight: 400,
     },
@@ -67,7 +67,7 @@ export const typography: TypographyOptions = {
         fontWeight: 500,
     },
     overline: {
-        fontSize: "14px",
+        fontSize: "12px",
         lineHeight: 1,
         fontWeight: 500,
     },
