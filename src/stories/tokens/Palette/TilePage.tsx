@@ -1,7 +1,7 @@
 import React from "react"
 import { Box, styled, Typography } from "@mui/material"
 import { ThemeName, themes } from "../../../typings"
-import { errorColor, infoColor, primaryColor, secondaryColor, successColor, warningColor } from "./colors"
+import { backgroundColor, commonColor, errorColor, infoColor, primaryColor, secondaryColor, successColor, textColor, warningColor } from "./colors"
 import { Tile } from "./Tile"
 
 const Wrapper = styled(Box)({
@@ -10,15 +10,15 @@ const Wrapper = styled(Box)({
 })
 
 const ColorWrapper = styled(Box)({
-    marginRight: "20px",
+    marginRight: "40px",
     marginBottom: "20px",
-    width: "30%",
-    minWidth: "350px",
+    width: "calc(100% / 3 - 80px)",
+    minWidth: "400px",
 })
 
 const ColorDefinition = styled(Box)({
     display: "flex",
-    flexWrap: "wrap",
+    flexWrap: "nowrap",
     flexDirection: "row",
     alignItems: "center",
 })
@@ -42,7 +42,10 @@ export const TilePage: React.FunctionComponent<Props> = ({
         successColor(palette),
         errorColor(palette),
         warningColor(palette),
-        infoColor(palette)
+        infoColor(palette),
+        backgroundColor(palette),
+        textColor(palette),
+        commonColor(palette),
     ]
 
     return <Wrapper>

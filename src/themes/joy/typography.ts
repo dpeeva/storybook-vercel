@@ -7,7 +7,7 @@ export const typography: TypographyOptions = {
     fontFamily: ["Montserrat Alternates", "Kometa", "sans-serif"].join(", "),
     body1: {
         fontSize: "14px",
-        lineHeight: 1.6,
+        lineHeight: 1.5,
         fontWeight: 400,
     },
     body2: {

@@ -188,3 +188,62 @@ export const infoColor = (palette: Palette) => ({
     ],
     contrastText: palette.info.contrastText,
 })
+
+export const backgroundColor = (palette: Palette) => ({
+    name: "Background",
+    description: "цвят на фон",
+    nuances: [
+        {
+            name: "по подразбиране", // "default",
+            value: palette.background.default,
+            description: "цвят за по-голямата част от съдържанието",
+        },
+        {
+            name: "на подложка", // "paper",
+            value: palette.background.paper,
+            description: "цвят при подложки на списъци, падащи менюта и др.",
+        },
+    ],
+    contrastText: palette.common.black,
+})
+
+export const textColor = (palette: Palette) => ({
+    name: "Text",
+    description: "цвят на текста",
+    nuances: [
+        {
+            name: "първичен", // "primary",
+            value: palette.text.primary,
+            description: "основен цвят на текста",
+        },
+        {
+            name: "вторичен", // "secondary",
+            value: palette.text.secondary,
+            description: "алтернативен цвят на текста",
+        },
+        {
+            name: "неактивно състояние", // "disabled",
+            value: palette.text.disabled,
+            description: "при неактивно състояние на контролите",
+        },
+    ],
+    contrastText: palette.common.white,
+})
+
+export const commonColor = (palette: Palette) => ({
+    name: "Common",
+    description: "цвят на текста",
+    nuances: [
+        {
+            name: "черно", // "black",
+            value: palette.common.black,
+            description: "базов цвят",
+        },
+        {
+            name: "бяло", // "white",
+            value: palette.common.white,
+            description: "базов цвят",
+        },
+    ],
+    contrastText: palette.info.main,
+})
