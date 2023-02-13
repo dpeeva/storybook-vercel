@@ -4,7 +4,7 @@ import { MuiAccordion, MuiAccordionDetails, MuiAccordionSummary, MuiTypography }
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/Accordion",
+    title: "Base/Collection/Accordion",
     component: MuiAccordion,
     parameters: {
         layout: "fullscreen"

@@ -5,7 +5,7 @@ import { MuiBox, MuiButton, MuiTooltip } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/Tooltip",
+    title: "Base/Collection/Tooltip",
     component: MuiTooltip,
     parameters: {
         layout: "fullscreen"

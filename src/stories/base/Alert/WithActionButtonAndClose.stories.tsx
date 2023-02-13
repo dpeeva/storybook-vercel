@@ -5,7 +5,7 @@ import { MuiAlert, MuiAlertTitle, MuiButton, MuiIconButton } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/Alert",
+    title: "Base/Collection/Alert",
     component: MuiAlert,
     parameters: {
         layout: "fullscreen"

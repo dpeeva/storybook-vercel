@@ -6,7 +6,7 @@ import { argTypes } from "./argTypes"
 import { CalendarTodayOutlined } from "@mui/icons-material"
 
 export default {
-    title: "Base/FormControl",
+    title: "Base/Collection/FormControl",
     component: MuiFormControl,
     parameters: {
         layout: "fullscreen"

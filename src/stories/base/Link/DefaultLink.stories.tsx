@@ -4,7 +4,7 @@ import { MuiLink } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/Link",
+    title: "Base/Collection/Link",
     component: MuiLink,
     parameters: {
         layout: "fullscreen"

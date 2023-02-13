@@ -4,7 +4,7 @@ import { MuiChip } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/Chip",
+    title: "Base/Collection/Chip",
     component: MuiChip,
     parameters: {
         layout: "fullscreen"

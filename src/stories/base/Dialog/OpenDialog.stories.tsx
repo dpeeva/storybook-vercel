@@ -7,7 +7,7 @@ import { textContent } from "."
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/Dialog",
+    title: "Base/Collection/Dialog",
     component: MuiDialog,
     parameters: {
         layout: "fullscreen"

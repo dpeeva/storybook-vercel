@@ -6,7 +6,7 @@ import { MuiIcon } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/Icon",
+    title: "Base/Collection/Icon",
     component: MuiIcon,
     parameters: {
         layout: "fullscreen"

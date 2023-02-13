@@ -5,7 +5,7 @@ import { MuiButton, MuiDialogActions, MuiDialogContent, MuiDialogTitle, MuiModal
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/Modal",
+    title: "Base/Collection/Modal",
     component: MuiModal,
     parameters: {
         layout: "fullscreen"

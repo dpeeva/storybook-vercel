@@ -5,7 +5,7 @@ import { MuiBadge } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/Badge",
+    title: "Base/Collection/Badge",
     component: MuiBadge,
     parameters: {
         layout: "fullscreen"

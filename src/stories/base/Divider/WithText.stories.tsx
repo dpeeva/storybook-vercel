@@ -6,7 +6,7 @@ import { argTypes } from "./argTypes"
 
 export default {
     component: MuiDivider,
-    title: "Base/Divider",
+    title: "Base/Collection/Divider",
     parameters: {
         layout: "fullscreen"
     },

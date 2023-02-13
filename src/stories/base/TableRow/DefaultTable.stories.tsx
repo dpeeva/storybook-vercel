@@ -5,7 +5,7 @@ import { MuiTable, MuiTableBody, MuiTableCell, MuiTableHead, MuiTableRow } from 
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/Table",
+    title: "Base/Collection/Table",
     component: MuiTable,
     parameters: {
         layout: "fullscreen"

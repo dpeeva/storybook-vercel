@@ -6,7 +6,7 @@ import { items } from "."
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/Autocomplete",
+    title: "Base/Collection/Autocomplete",
     component: MuiAutocomplete,
     parameters: {
         layout: "fullscreen"

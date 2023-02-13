@@ -7,7 +7,7 @@ import { argTypes } from "./argTypes"
 
 export default {
     component: MuiSelect,
-    title: "Base/MultiSelect",
+    title: "Base/Collection/MultiSelect",
     parameters: {
         layout: "fullscreen"
     },

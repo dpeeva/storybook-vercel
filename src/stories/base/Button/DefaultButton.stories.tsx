@@ -4,7 +4,7 @@ import { MuiButton } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/Button",
+    title: "Base/Collection/Button",
     component: MuiButton,
     parameters: {
         layout: "fullscreen"

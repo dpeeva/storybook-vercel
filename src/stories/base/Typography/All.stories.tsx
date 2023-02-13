@@ -4,7 +4,7 @@ import { MuiStack, MuiTypography } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/Typography",
+    title: "Base/Collection/Typography",
     component: MuiTypography,
     parameters: {
         layout: "fullscreen"

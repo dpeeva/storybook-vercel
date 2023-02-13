@@ -4,7 +4,7 @@ import { MuiInput } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/Input",
+    title: "Base/Collection/Input",
     component: MuiInput,
     parameters: {
         layout: "fullscreen"

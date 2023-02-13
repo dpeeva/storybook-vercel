@@ -4,7 +4,7 @@ import { MuiRating } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/Rating",
+    title: "Base/Collection/Rating",
     component: MuiRating,
     parameters: {
         layout: "fullscreen"

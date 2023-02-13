@@ -6,7 +6,7 @@ import { MuiBox, MuiInputAdornment, MuiOutlinedInput } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/OutlinedInput",
+    title: "Base/Collection/OutlinedInput",
     component: MuiOutlinedInput,
     parameters: {
         layout: "fullscreen"

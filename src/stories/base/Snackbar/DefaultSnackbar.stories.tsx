@@ -4,7 +4,7 @@ import { MuiButton, MuiSnackbar } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/Snackbar",
+    title: "Base/Collection/Snackbar",
     component: MuiSnackbar,
     parameters: {
         layout: "fullscreen"

@@ -5,7 +5,7 @@ import { argTypes } from "./argTypes"
 import { AutocompleteProps, TextFieldProps } from "@mui/material"
 
 export default {
-    title: "Base/Autocomplete",
+    title: "Base/Collection/Autocomplete",
     component: MuiAutocomplete,
     parameters: {
         layout: "fullscreen"
@@ -61,7 +61,7 @@ const Template: StoryFn = ({
             )}
             renderInput={(params) =>
                 <MuiTextField
-                    color={color as TextFieldProps["color"]}
+                    color={color}
                     {...params}
                     variant={variant}
                     label={label}

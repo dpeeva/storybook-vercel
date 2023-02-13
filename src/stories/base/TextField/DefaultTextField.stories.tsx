@@ -4,7 +4,7 @@ import { MuiBox, MuiTextField } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/TextField",
+    title: "Base/Collection/TextField",
     component: MuiTextField,
     parameters: {
         layout: "fullscreen"

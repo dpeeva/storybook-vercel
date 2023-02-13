@@ -4,7 +4,7 @@ import { MuiCheckbox, MuiFormControlLabel } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/Checkbox",
+    title: "Base/Collection/Checkbox",
     component: MuiCheckbox,
     parameters: {
         layout: "fullscreen"

@@ -4,7 +4,7 @@ import { MuiFilledInput } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/FilledInput",
+    title: "Base/Collection/FilledInput",
     component: MuiFilledInput,
     parameters: {
         layout: "fullscreen"

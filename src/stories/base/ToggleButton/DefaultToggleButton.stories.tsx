@@ -5,7 +5,7 @@ import { MuiToggleButton, MuiToggleButtonGroup } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/ToggleButton",
+    title: "Base/Collection/ToggleButton",
     component: MuiToggleButton,
     parameters: {
         layout: "fullscreen"

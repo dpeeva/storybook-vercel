@@ -5,7 +5,7 @@ import { MuiList, MuiListItem, MuiListItemIcon, MuiListItemText, MuiPaper, MuiTy
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/List",
+    title: "Base/Collection/List",
     component: MuiList,
     parameters: {
         layout: "fullscreen"

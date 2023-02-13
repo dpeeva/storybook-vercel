@@ -6,7 +6,7 @@ import { items } from "."
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/Menu",
+    title: "Base/Collection/Menu",
     component: MuiMenu,
     parameters: {
         layout: "fullscreen"

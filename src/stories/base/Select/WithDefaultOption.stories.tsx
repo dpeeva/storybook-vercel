@@ -5,7 +5,7 @@ import { items } from "."
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/Select",
+    title: "Base/Collection/Select",
     component: MuiSelect,
     parameters: {
         layout: "fullscreen"

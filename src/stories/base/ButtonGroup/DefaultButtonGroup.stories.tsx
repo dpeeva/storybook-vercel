@@ -3,7 +3,7 @@ import { MuiButton, MuiButtonGroup } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/ButtonGroup",
+    title: "Base/Collection/ButtonGroup",
     component: MuiButtonGroup,
     parameters: {
         layout: "fullscreen"

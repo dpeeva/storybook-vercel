@@ -5,7 +5,7 @@ import { MuiFormControl, MuiFormHelperText, MuiInputLabel, MuiOutlinedInput } fr
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/OutlinedInput",
+    title: "Base/Collection/OutlinedInput",
     component: MuiOutlinedInput,
     parameters: {
         layout: "fullscreen"

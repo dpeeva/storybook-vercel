@@ -4,7 +4,7 @@ import { MuiSwitch } from "../../../mui"
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/Switch",
+    title: "Base/Collection/Switch",
     component: MuiSwitch,
     parameters: {
         layout: "fullscreen"

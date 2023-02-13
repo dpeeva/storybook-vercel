@@ -6,7 +6,7 @@ import { baseSizes } from "../../constants"
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/IconButton",
+    title: "Base/Collection/IconButton",
     component: MuiIconButton,
     parameters: {
         layout: "fullscreen"

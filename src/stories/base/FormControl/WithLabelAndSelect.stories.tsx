@@ -5,7 +5,7 @@ import { items } from "."
 import { argTypes } from "./argTypes"
 
 export default {
-    title: "Base/FormControl",
+    title: "Base/Collection/FormControl",
     component: MuiFormControl,
     parameters: {
         layout: "fullscreen"
