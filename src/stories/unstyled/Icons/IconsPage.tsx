@@ -1,6 +1,6 @@
 import { alpha, styled } from "@mui/material"
 import { BaseColor, BaseSize, BaseVariant, ThemeName, themes } from "../../../typings"
-import { IconType } from "../../../mui"
+import { IconType } from "../../../mui-icons"
 import { IconButton } from "../IconButton"
 import { Typography } from "../Typography"
 import { sections } from "./sections"
@@ -19,6 +19,7 @@ const IconWrapper = styled("div")(({ theme }) => ({
     border: `1px solid ${alpha(theme.palette.common.black, 0.3)}`,
     padding: "20px",
     width: "25%",
+    minWidth: "200px",
     maxWidth: "250px",
     color: theme.palette.common.black,
 }))
