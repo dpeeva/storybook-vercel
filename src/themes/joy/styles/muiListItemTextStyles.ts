@@ -3,5 +3,8 @@ import { MuiTheme } from "../../../typings"
 
 export const muiListItemTextStyles: Components<MuiTheme>["MuiListItemText"] = {
     styleOverrides: {
+        root: {
+            fontSize: "14px",
+        }
     }
 }

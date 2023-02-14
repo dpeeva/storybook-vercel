@@ -1,7 +1,18 @@
 import { Components } from "@mui/material"
-// import { chipClasses } from "@mui/material/Chip"
 import { MuiTheme } from "../../../typings"
 
 export const muiChipStyles: Components<MuiTheme>["MuiChip"] = {
-    variants: [],
+    variants: [
+        {
+            props: { size: "small" },
+            style: {
+                height: "22px",
+                fontSize: "12px",
+            }
+        },
+        {
+            props: { size: "medium" },
+            style: {}
+        },
+    ],
 }
