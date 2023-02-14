@@ -16,7 +16,6 @@ export default {
         // Additional props:
         helperText: {
             control: { type: "text" },
-            defaultValue: "Helper text for Age",
         },
     },
 } as Meta
@@ -47,7 +46,7 @@ const Template: StoryFn = ({
     <MuiFormControl
         variant={variant} // Needed for proper position of Label
         size={size} // Needed for proper position of Label inside input
-        sx={{ width: "200px" }}
+        sx={{ width: "250px" }}
     >
         <MuiInputLabel id={"label-id"}>{label}</MuiInputLabel>
         <MuiSelect
@@ -75,7 +74,8 @@ export const WithHelperText = Template.bind({})
 WithHelperText.args = {
     variant: "outlined",
     color: "primary",
-    size: "small",
+    size: "medium",
     label: "Имейл", // Needed to hold enough background space for Label on top of border
     disabled: false,
+    helperText: "Моля, въведете имейл",
 }

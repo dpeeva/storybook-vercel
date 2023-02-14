@@ -41,7 +41,7 @@ const Template: StoryFn = ({
     hover,
     selected
 }) => (
-    <MuiTableContainer sx={{ maxHeight: "200px" }}>
+    <MuiTableContainer sx={{ maxHeight: "250px" }}>
         <MuiTable {...{ padding, size, stickyHeader }}>
             <MuiTableHead>
                 <MuiTableCell
@@ -86,7 +86,7 @@ export const WithStickyHeader = Template.bind({})
 WithStickyHeader.args = {
     stickyHeader: true,
     padding: "normal",
-    size: "small",
+    size: "medium",
     align: "left",
     hover: true,
     selected: false,

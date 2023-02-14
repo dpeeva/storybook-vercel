@@ -30,7 +30,7 @@ const Template: StoryFn = ({
     disabled,
     helperText
 }) => (
-    <MuiBox sx={{ width: "200px" }}>
+    <MuiBox sx={{ width: "250px" }}>
         <MuiFormControl
             {...{ variant, size, error, disabled }}
             fullWidth
@@ -64,7 +64,7 @@ const Template: StoryFn = ({
 export const WithFormGroup = Template.bind({})
 WithFormGroup.args = {
     variant: "standard",
-    size: "small",
+    size: "medium",
     error: false,
     disabled: false,
     helperText: "Помощен текст",

@@ -29,7 +29,7 @@ const InputProps = {
 }
 
 const Template: StoryFn = (args: Props) => (
-    <MuiBox sx={{ width: "200px" }}>
+    <MuiBox sx={{ width: "250px" }}>
         <MuiSelect
             {...args}
             MenuProps={MenuProps}
@@ -43,7 +43,7 @@ const Template: StoryFn = (args: Props) => (
                 <MuiMenuItem
                     key={`${i}-${item.value}`}
                     value={item.value}
-                    sx={{ maxWidth: "200px" }}
+                    sx={{ maxWidth: "250px" }}
                 >
                     <LongTextSingleLine>{item.text}</LongTextSingleLine>
                 </MuiMenuItem>
@@ -56,7 +56,7 @@ export const WithLongTextSingleLine = Template.bind({})
 WithLongTextSingleLine.args = {
     variant: "outlined",
     color: "primary",
-    size: "small",
+    size: "medium",
     label: "", // Needed to hold enough background space for Label on top of border
     disabled: false,
 }

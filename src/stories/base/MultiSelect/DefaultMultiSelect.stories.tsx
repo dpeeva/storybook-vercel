@@ -49,7 +49,7 @@ const Template: StoryFn = (args: Props) => {
         fullWidth
         value={personAge}
         onChange={handleChange}
-        sx={{ width: "200px" }}
+        sx={{ width: "250px" }}
     >
         {items.map((item, i) => (
             <MuiMenuItem
@@ -65,6 +65,6 @@ Default.args = {
     variant: "outlined",
     color: "primary", // defaults to primary when not set
     multiple: true,
-    size: "small",
+    size: "medium",
     disabled: false,
 }

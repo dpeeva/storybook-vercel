@@ -21,7 +21,7 @@ type Props = OutlinedInputProps & {
 const Template: StoryFn = (args: Props) => {
     const [val, setValue] = React.useState("250")
     return <MuiBox
-        sx={{ width: "100px" }}
+        sx={{ width: "250px" }}
     >
         <MuiInputLabel htmlFor="outlined-input">Имейл</MuiInputLabel>
         <MuiOutlinedInput
@@ -37,7 +37,7 @@ const Template: StoryFn = (args: Props) => {
 export const WithInputLabel = Template.bind({})
 WithInputLabel.args = {
     color: "primary", // defaults to primary when not set
-    size: "small",
+    size: "medium",
     placeholder: "Въведете имейл",
     fullWidth: true,
     multiline: false,

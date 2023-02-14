@@ -27,7 +27,7 @@ const InputProps = {
 }
 
 const Template: StoryFn = (args: Props) => (
-    <MuiBox sx={{ width: "200px" }}>
+    <MuiBox sx={{ width: "250px" }}>
         <MuiSelect
             {...args}
             inputProps={InputProps}
@@ -47,7 +47,7 @@ export const Native = Template.bind({})
 Native.args = {
     variant: "outlined",
     color: "secondary",
-    size: "small",
+    size: "medium",
     label: "", // Needed to hold enough background space for Label on top of border
     native: true,
     disabled: false,

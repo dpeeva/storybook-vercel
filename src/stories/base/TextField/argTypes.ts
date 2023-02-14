@@ -10,7 +10,7 @@ export const argTypes = {
         control: { type: "select" },
     },
     size: {
-        options: ["xs", "small", "medium"],
+        options: ["small", "medium"],
         control: { type: "radio" },
     },
     label: {

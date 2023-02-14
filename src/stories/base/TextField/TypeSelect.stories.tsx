@@ -19,7 +19,7 @@ type Props = TextFieldProps & {
 }
 
 const Template: StoryFn = (args: Props) => (
-    <MuiBox sx={{ width: "200px" }}>
+    <MuiBox sx={{ width: "250px" }}>
         <MuiTextField
             {...args}
             select
@@ -39,7 +39,7 @@ export const TypeSelect = Template.bind({})
 TypeSelect.args = {
     variant: "outlined", // defaults to outlined when not set
     color: "primary", // defaults to primary when not set
-    size: "small",
+    size: "medium",
     label: "Имейл",
     placeholder: "Въведете текст",
     helperText: "Помощен текст",

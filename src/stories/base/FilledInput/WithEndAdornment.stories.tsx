@@ -32,7 +32,7 @@ const Template: StoryFn = (args: Props) => (
 export const WithEndAdornment = Template.bind({})
 WithEndAdornment.args = {
     color: "primary",
-    size: "small",
+    size: "medium",
     label: "Имейл",
     placeholder: "Въведете текст",
     fullWidth: false,

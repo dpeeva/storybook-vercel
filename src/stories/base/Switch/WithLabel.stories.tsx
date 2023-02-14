@@ -49,7 +49,7 @@ const Template: StoryFn = ({
 export const WithLabel = Template.bind({})
 WithLabel.args = {
     color: "primary", // defaults to primary when not set
-    size: "small",
+    size: "medium",
     defaultChecked: true,
     disabled: false,
     label: "Имейл",

@@ -52,7 +52,7 @@ const Template: StoryFn = ({
 export const Default = Template.bind({})
 Default.args = {
     color: "primary",
-    size: "small",
+    size: "medium",
     disabled: false,
     orientation: "horizontal",
 }

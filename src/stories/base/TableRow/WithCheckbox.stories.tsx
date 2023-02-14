@@ -84,7 +84,7 @@ export const WithCheckbox = Template.bind({})
 WithCheckbox.args = {
     stickyHeader: false,
     padding: "normal",
-    size: "small",
+    size: "medium",
     align: "left",
     hover: true,
     selected: false,

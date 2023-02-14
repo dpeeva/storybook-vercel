@@ -33,7 +33,7 @@ const Template: StoryFn = (args: Props) => (
     <MuiFormControl
         variant={args.variant} // Needed for proper position of Label
         size={args.size} // Needed for proper position of Label inside input
-        sx={{ width: "200px" }}
+        sx={{ width: "250px" }}
     >
         <MuiInputLabel id={"label-id"}>{args.label}</MuiInputLabel>
         <MuiSelect
@@ -60,7 +60,7 @@ export const WithLabel = Template.bind({})
 WithLabel.args = {
     variant: "outlined",
     color: "primary",
-    size: "small",
+    size: "medium",
     label: "Имейл", // Needed to hold enough background space for Label on top of border
     disabled: false,
 }

@@ -41,7 +41,7 @@ const Template: StoryFn = ({
 export const WithCheckedIcon = Template.bind({})
 WithCheckedIcon.args = {
     color: "primary", // defaults to primary when not set
-    size: "small",
+    size: "medium",
     defaultChecked: false,
     disabled: false,
     label: "Имейл",

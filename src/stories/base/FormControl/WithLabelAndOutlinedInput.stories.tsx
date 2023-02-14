@@ -39,7 +39,7 @@ const Template: StoryFn = ({
     label,
     placeholder,
 }) => (
-    <MuiBox sx={{ width: "200px" }}>
+    <MuiBox sx={{ width: "250px" }}>
         <MuiFormControl
             {...{ variant, size, error, disabled, label }}
             fullWidth
@@ -62,7 +62,7 @@ const Template: StoryFn = ({
 export const WithLabelAndOutlinedInput = Template.bind({})
 WithLabelAndOutlinedInput.args = {
     variant: "outlined",
-    size: "small",
+    size: "medium",
     error: false,
     disabled: false,
     label: "Имейл",

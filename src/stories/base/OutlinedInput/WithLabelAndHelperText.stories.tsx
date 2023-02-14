@@ -36,30 +36,29 @@ const Template: StoryFn = ({
 }) => {
     const [val, setValue] = React.useState("")
 
-    return <MuiFormControl
-        variant="outlined"
-        sx={{ width: "100px" }}
-    >
-        <MuiInputLabel htmlFor="outlined-input">{label}</MuiInputLabel>
-        <MuiOutlinedInput
-            {...{ color, size, label, fullWidth, multiline, required, error, disabled }}
-            id="outlined-input"
-            inputProps={{ "aria-label": `${label}` }}
-            onChange={(newValue) => setValue(newValue.target.value)}
-            value={val}
-        />
-        <MuiFormHelperText
-            sx={{
-                fontSize: "10px",
-            }}
-        >{helperText}</MuiFormHelperText>
-    </MuiFormControl>
+    return (
+        <MuiFormControl
+            variant="outlined"
+            size={size}
+            sx={{ width: "250px" }}
+        >
+            <MuiInputLabel htmlFor="outlined-input">{label}</MuiInputLabel>
+            <MuiOutlinedInput
+                {...{ color, size, label, fullWidth, multiline, required, error, disabled }}
+                id="outlined-input"
+                inputProps={{ "aria-label": `${label}` }}
+                onChange={(newValue) => setValue(newValue.target.value)}
+                value={val}
+            />
+            <MuiFormHelperText>{helperText}</MuiFormHelperText>
+        </MuiFormControl>
+    )
 }
 
 export const WithLabelAndHelperText = Template.bind({})
 WithLabelAndHelperText.args = {
     color: "primary", // defaults to primary when not set
-    size: "small",
+    size: "medium",
     label: "Имейл",
     placeholder: "Въведете текст",
     fullWidth: true,

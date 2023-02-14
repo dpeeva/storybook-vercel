@@ -48,7 +48,7 @@ const Template: StoryFn = ({
     label,
     placeholder
 }) => (
-    <MuiBox sx={{ width: "200px" }}>
+    <MuiBox sx={{ width: "250px" }}>
         <MuiAutocomplete
             {...{ color, size, multiple, freeSolo, limitTags, disablePortal, disableClearable, loading, loadingText, disabled }}
             fullWidth
@@ -59,7 +59,7 @@ const Template: StoryFn = ({
             getOptionLabel={(option: any) => option.name}
             clearIcon={<Close />}
             componentsProps={{
-                clearIndicator: { size: "small" }
+                clearIndicator: { size: "medium" }
             }}
             renderOption={(props, option: any) => (
                 <MuiMenuItem {...props}>
@@ -91,7 +91,7 @@ const Template: StoryFn = ({
 export const MultiWithChips = Template.bind({})
 MultiWithChips.args = {
     color: "primary",
-    size: "small",
+    size: "medium",
     multiple: true,
     freeSolo: false,
     limitTags: 3,

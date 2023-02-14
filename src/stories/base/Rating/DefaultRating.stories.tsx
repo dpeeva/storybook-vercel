@@ -23,7 +23,7 @@ const Template: StoryFn = (args: Props) => (
 
 export const Default = Template.bind({})
 Default.args = {
-    size: "small",
+    size: "medium",
     value: 1,
     precision: 1,
     max: 5,

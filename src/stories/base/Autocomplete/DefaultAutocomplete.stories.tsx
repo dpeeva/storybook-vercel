@@ -47,7 +47,7 @@ const Template: StoryFn = ({
     label,
     placeholder
 }) => (
-    <MuiBox sx={{ width: "200px" }}>
+    <MuiBox sx={{ width: "250px" }}>
         <MuiAutocomplete
             {...{ color, size, multiple, freeSolo, limitTags, disablePortal, disableClearable, loading, loadingText, disabled }}
             fullWidth
@@ -75,7 +75,7 @@ const Template: StoryFn = ({
 export const Default = Template.bind({})
 Default.args = {
     color: "primary",
-    size: "small",
+    size: "medium",
     multiple: false,
     freeSolo: false,
     limitTags: 3,

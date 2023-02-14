@@ -26,7 +26,7 @@ const Template: StoryFn = (args) => {
 
     return <MuiFormControl
         variant="outlined"
-        sx={{ width: "100px" }}
+        sx={{ width: "250px" }}
     >
         <MuiInputLabel htmlFor="outlined-input">{args.label}</MuiInputLabel>
         <MuiOutlinedInput
@@ -42,7 +42,7 @@ const Template: StoryFn = (args) => {
 export const WithLabel = Template.bind({})
 WithLabel.args = {
     color: "primary", // defaults to primary when not set
-    size: "small",
+    size: "medium",
     label: "Имейл",
     fullWidth: true,
     multiline: false,

@@ -72,7 +72,7 @@ export const Default = Template.bind({})
 Default.args = {
     stickyHeader: false,
     padding: "normal",
-    size: "small",
+    size: "medium",
     align: "left",
     hover: true,
     selected: false,

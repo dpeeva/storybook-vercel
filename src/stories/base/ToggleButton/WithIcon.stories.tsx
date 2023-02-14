@@ -61,6 +61,6 @@ const Template: StoryFn = ({
 export const WithIcon = Template.bind({})
 WithIcon.args = {
     color: "primary",
-    size: "small",
+    size: "medium",
     disabled: false,
 }

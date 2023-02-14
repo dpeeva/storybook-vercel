@@ -27,7 +27,7 @@ const Template: StoryFn = (args: Props) => (
 export const Default = Template.bind({})
 Default.args = {
     color: "primary", // defaults to primary when not set
-    size: "small",
+    size: "medium",
     placeholder: "Въведете текст",
     fullWidth: false,
     multiline: false,

@@ -37,7 +37,7 @@ const Template: StoryFn = ({
     const [val, setValue] = React.useState("250")
 
     return <MuiBox
-        sx={{ width: "100px" }}
+        sx={{ width: "250px" }}
     >
         <MuiInputLabel htmlFor="outlined-input">{label}</MuiInputLabel>
         <MuiOutlinedInput
@@ -47,18 +47,14 @@ const Template: StoryFn = ({
             onChange={(newValue) => setValue(newValue.target.value)}
             value={val}
         />
-        <MuiFormHelperText
-            sx={{
-                fontSize: "10px",
-            }}
-        >{helperText}</MuiFormHelperText>
+        <MuiFormHelperText>{helperText}</MuiFormHelperText>
     </MuiBox>
 }
 
 export const WithInputLabelAndHelperText = Template.bind({})
 WithInputLabelAndHelperText.args = {
     color: "primary", // defaults to primary when not set
-    size: "small",
+    size: "medium",
     label: "Имейл",
     placeholder: "Въведете текст",
     fullWidth: true,

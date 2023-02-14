@@ -24,7 +24,7 @@ const Template: StoryFn = (args: Props) => (
 export const Default = Template.bind({})
 Default.args = {
     color: "primary",
-    size: "small",
+    size: "medium",
     label: "Имейл",
     placeholder: "Въведете текст",
     fullWidth: false,

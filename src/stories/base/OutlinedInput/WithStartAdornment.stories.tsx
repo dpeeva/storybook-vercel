@@ -22,7 +22,7 @@ type Props = OutlinedInputProps & {
 const Template: StoryFn = (args: Props) => {
     const [val, setValue] = React.useState("250")
     return <MuiBox
-        sx={{ width: "100px" }}
+        sx={{ width: "250px" }}
     >
         <MuiOutlinedInput
             {...args}
@@ -41,7 +41,7 @@ const Template: StoryFn = (args: Props) => {
 export const WithStartAdornment = Template.bind({})
 WithStartAdornment.args = {
     color: "primary", // defaults to primary when not set
-    size: "small",
+    size: "medium",
     placeholder: "Placeholder",
     fullWidth: true,
     multiline: false,

@@ -36,7 +36,7 @@ const Template: StoryFn = (args: Props) => {
         setAge(event.target.value as any)
     }
 
-    return <MuiBox sx={{ width: "200px" }}>
+    return <MuiBox sx={{ width: "250px" }}>
         <MuiSelect
             {...args}
             MenuProps={MenuProps}
@@ -62,7 +62,7 @@ export const WithComplexValues = Template.bind({})
 WithComplexValues.args = {
     variant: "outlined",
     color: "primary",
-    size: "small",
+    size: "medium",
     label: "", // Needed to hold enough background space for Label on top of border
     disabled: false,
 }
