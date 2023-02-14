@@ -30,6 +30,6 @@ const Template: StoryFn = ({
 
 export const Page = Template.bind({})
 Page.args = {
-    size: "small",
+    size: "medium",
     disabled: false,
 }

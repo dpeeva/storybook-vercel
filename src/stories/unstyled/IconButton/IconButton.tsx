@@ -7,28 +7,28 @@ export const IconButton = styled(Button)(({ theme, size }) => ({
     paddingBottom: "5px",
 
     ...(size === "small" && {
-        minWidth: "34px",
-        paddingLeft: "6px",
-        paddingRight: "6px",
+        minWidth: "30px",
+        paddingLeft: "5px",
+        paddingRight: "5px",
         [".MuiSvgIcon-root"]: {
-            fontSize: "20px",
+            fontSize: "18px",
         },
     }),
 
     ...(size === "medium" && {
-        minWidth: "40px",
+        minWidth: "36px",
         paddingLeft: "5px",
         paddingRight: "5px",
         [".MuiSvgIcon-root"]: {
-            fontSize: "24px",
+            fontSize: "22px",
         },
     }),
 
     ...(size === "large" && {
-        minWidth: "46px",
-        padding: "3px 5px",
+        minWidth: "42px",
+        padding: "3px 4px",
         [".MuiSvgIcon-root"]: {
-            fontSize: "32px",
+            fontSize: "30px",
         },
     }),
 

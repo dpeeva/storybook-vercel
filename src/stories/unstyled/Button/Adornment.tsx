@@ -9,7 +9,6 @@ const AdornmentWrapper = styled("span")<{
     size: BaseSize
 }>(({ theme, position, size }) => ({
     position: "relative",
-    top: "-1px",
 
     ...(size === "small" && {
         ...(position === "start" && {
@@ -22,19 +21,19 @@ const AdornmentWrapper = styled("span")<{
 
     ...(size === "medium" && {
         ...(position === "start" && {
-            left: "-10px",
+            left: "-12px",
         }),
         ...(position === "end" && {
-            right: "-10px",
+            right: "-12px",
         }),
     }),
 
     ...(size === "large" && {
         ...(position === "start" && {
-            left: "-12px",
+            left: "-18px",
         }),
         ...(position === "end" && {
-            right: "-12px",
+            right: "-18px",
         }),
     }),
 }))

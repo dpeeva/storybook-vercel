@@ -42,7 +42,7 @@ WithStartIcon.args = {
     mode: "joy",
     variant: "contained",
     color: "primary",
-    size: "small",
+    size: "medium",
     disabled: false,
     text: "Добави в каталог",
 }
