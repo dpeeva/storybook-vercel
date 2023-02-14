@@ -6,13 +6,13 @@ export const typography: TypographyOptions = {
     },
     fontFamily: ["Montserrat Alternates", "Kometa", "sans-serif"].join(", "),
     body1: {
-        fontSize: "14px",
-        lineHeight: 1.5,
+        fontSize: "16px",
+        lineHeight: 1.5, // "24px",
         fontWeight: 400,
     },
     body2: {
-        fontSize: "12px",
-        lineHeight: 1.55,
+        fontSize: "14px",
+        lineHeight: 1.5, // "21px",
         fontWeight: 400,
     },
     h1: {
@@ -46,10 +46,11 @@ export const typography: TypographyOptions = {
         fontWeight: 700,
     },
     button: {
-        lineHeight: "1.693em",
-        letterSpacing: 0.25,
+        lineHeight: 1.2,
+        fontSize: "14px",
         fontWeight: 500,
         textTransform: "none",
+        letterSpacing: 0.25,
     },
     subtitle1: {
         fontSize: "18px",
@@ -62,7 +63,7 @@ export const typography: TypographyOptions = {
         fontWeight: 600,
     },
     caption: {
-        fontSize: "12px",
+        fontSize: "14px",
         lineHeight: 1,
         fontWeight: 500,
     },
