@@ -4,7 +4,6 @@ import { MuiTheme } from "../../../typings"
 export const muiInputLabelStyles: Components<MuiTheme>["MuiInputLabel"] = {
     styleOverrides: {
         root: ({ theme }) => ({
-            //
         })
     }
 }
