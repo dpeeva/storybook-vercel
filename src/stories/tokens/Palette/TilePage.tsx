@@ -1,7 +1,7 @@
 import React from "react"
 import { Box, styled, Typography } from "@mui/material"
 import { ThemeName, themes } from "../../../typings"
-import { backgroundColor, commonColor, errorColor, infoColor, primaryColor, secondaryColor, successColor, textColor, warningColor } from "./colors"
+import { backgroundColor, commonColor, errorColor, infoColor, primaryColor, secondaryColor, shadesColor, successColor, textColor, warningColor } from "./colors"
 import { Tile } from "./Tile"
 
 const Wrapper = styled(Box)({
@@ -12,8 +12,7 @@ const Wrapper = styled(Box)({
 const ColorWrapper = styled(Box)({
     marginRight: "40px",
     marginBottom: "20px",
-    width: "calc(100% / 3 - 80px)",
-    minWidth: "400px",
+    width: "100%",
 })
 
 const ColorDefinition = styled(Box)({
@@ -22,11 +21,6 @@ const ColorDefinition = styled(Box)({
     flexDirection: "row",
     alignItems: "center",
 })
-
-const Description = styled(Box)(({ theme }) => ({
-    paddingLeft: "20px",
-    color: theme.palette.text.primary,
-}))
 
 interface Props {
     mode?: ThemeName
@@ -46,6 +40,7 @@ export const TilePage: React.FunctionComponent<Props> = ({
         backgroundColor(palette),
         textColor(palette),
         commonColor(palette),
+        shadesColor(palette),
     ]
 
     return <Wrapper>
@@ -53,7 +48,10 @@ export const TilePage: React.FunctionComponent<Props> = ({
             <Typography variant="h2">
                 {color.name}
             </Typography>
-            <Typography>
+            <Typography variant="subtitle1">
+                {color.resume}
+            </Typography>
+            <Typography variant="body1">
                 {color.description}
             </Typography>
             {color.nuances.map((c, i: number) => <ColorDefinition key={`${c}-${i}`}>
@@ -70,11 +68,6 @@ export const TilePage: React.FunctionComponent<Props> = ({
                         {c.value}
                     </Typography>
                 </Tile>
-                <Description>
-                    <Typography color="inherit">
-                        {c.description}
-                    </Typography>
-                </Description>
             </ColorDefinition>)}
         </ColorWrapper>)}
     </Wrapper>

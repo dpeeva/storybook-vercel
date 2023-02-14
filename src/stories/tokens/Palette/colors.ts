@@ -53,7 +53,8 @@ export const colors = (palette: Palette): Omit<Palette,
 
 export const primaryColor = (palette: Palette) => ({
     name: "Primary",
-    description: "Първичен цвят",
+    resume: "Първичен цвят",
+    description: "The primary color palette is used across all the interactive elements, such as CTAs, links, inputs, active states, etc.",
     nuances: [
         {
             name: "основен", // "main",
@@ -76,7 +77,8 @@ export const primaryColor = (palette: Palette) => ({
 
 export const secondaryColor = (palette: Palette) => ({
     name: "Secondary",
-    description: "Вторичен цвят",
+    resume: "Вторичен цвят",
+    description: "The secondary color palette is used alongside the primary to indicate to the user it’s the secondary focus.",
     nuances: [
         {
             name: "основен", // "main",
@@ -99,7 +101,8 @@ export const secondaryColor = (palette: Palette) => ({
 
 export const successColor = (palette: Palette) => ({
     name: "Success",
-    description: "за успешна операция",
+    resume: "за успешни действия",
+    description: "These colors depict an emotion of positivity. Generally used across success, complete states.",
     nuances: [
         {
             name: "основен", // "main",
@@ -122,7 +125,8 @@ export const successColor = (palette: Palette) => ({
 
 export const errorColor = (palette: Palette) => ({
     name: "Error",
-    description: "за съобщения за грешка",
+    resume: "при съобщения за грешка",
+    description: "These colors depict an emotion of negativity. Generally used across error states.",
     nuances: [
         {
             name: "основен", // "main",
@@ -145,7 +149,8 @@ export const errorColor = (palette: Palette) => ({
 
 export const warningColor = (palette: Palette) => ({
     name: "Warning",
-    description: "за предупредителни съобщения",
+    resume: "за предупредителни съобщения",
+    description: "These colors depict an emotion of holding. Generally used across warning or on-hold states.",
     nuances: [
         {
             name: "основен", // "main",
@@ -168,7 +173,8 @@ export const warningColor = (palette: Palette) => ({
 
 export const infoColor = (palette: Palette) => ({
     name: "Info",
-    description: "за информационни съобщения",
+    resume: "за информационни съобщения",
+    description: "These colors depict an emotion of searching. Generally used for consuming additional information.",
     nuances: [
         {
             name: "основен", // "main",
@@ -191,7 +197,8 @@ export const infoColor = (palette: Palette) => ({
 
 export const backgroundColor = (palette: Palette) => ({
     name: "Background",
-    description: "цвят на фон",
+    resume: "цвят на фон",
+    description: "General colors used for backgrounds.",
     nuances: [
         {
             name: "по подразбиране", // "default",
@@ -209,7 +216,8 @@ export const backgroundColor = (palette: Palette) => ({
 
 export const textColor = (palette: Palette) => ({
     name: "Text",
-    description: "цвят на текста",
+    resume: "цвят на текста",
+    description: "General colors used for text content.",
     nuances: [
         {
             name: "първичен", // "primary",
@@ -232,7 +240,8 @@ export const textColor = (palette: Palette) => ({
 
 export const commonColor = (palette: Palette) => ({
     name: "Common",
-    description: "цвят на текста",
+    resume: "базови цветове",
+    description: "General colors used for every type of content.",
     nuances: [
         {
             name: "черно", // "black",
@@ -246,4 +255,73 @@ export const commonColor = (palette: Palette) => ({
         },
     ],
     contrastText: palette.info.main,
+})
+
+export const shadesColor = (palette: Palette) => ({
+    name: "Grey",
+    resume: "нюанси на сивото",
+    description: "These colors are used as supporting secondary colors in backgrounds, text colors, separators, modals, etc. ",
+    nuances: [
+        {
+            name: "50",
+            value: palette.grey[50],
+            description: "цвят",
+        },
+        {
+            name: "100",
+            value: palette.grey[100],
+            description: "цвят",
+        },
+        {
+            name: "200",
+            value: palette.grey[200],
+            description: "цвят",
+        },
+        {
+            name: "300",
+            value: palette.grey[300],
+            description: "цвят",
+        },
+        {
+            name: "400",
+            value: palette.grey[400],
+            description: "цвят",
+        },
+        {
+            name: "500",
+            value: palette.grey[500],
+            description: "цвят",
+        },
+        {
+            name: "600",
+            value: palette.grey[600],
+            description: "цвят",
+        },
+        {
+            name: "700",
+            value: palette.grey[700],
+            description: "цвят",
+        },
+        {
+            name: "800",
+            value: palette.grey[800],
+            description: "цвят",
+        },
+        {
+            name: "900",
+            value: palette.grey[900],
+            description: "цвят",
+        },
+        {
+            name: "A100",
+            value: palette.grey["A100"],
+            description: "цвят",
+        },
+        {
+            name: "A200",
+            value: palette.grey["A200"],
+            description: "цвят",
+        },
+    ],
+    contrastText: palette.primary.dark,
 })
