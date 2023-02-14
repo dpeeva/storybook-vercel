@@ -34,7 +34,7 @@ export const Default = Template.bind({})
 Default.args = {
     variant: "contained",
     color: "primary",
-    size: "small",
+    size: "medium",
     disabled: false,
     text: "Button"
 }

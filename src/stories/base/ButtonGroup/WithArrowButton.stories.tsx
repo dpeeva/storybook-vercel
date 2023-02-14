@@ -34,7 +34,7 @@ export const WithArrowButton = Template.bind({})
 WithArrowButton.args = {
     variant: "contained",
     color: "primary",
-    size: "small",
+    size: "medium",
     orientation: "horizontal",
     disabled: false,
     text: "Button"
