@@ -41,4 +41,17 @@ export const palette: PaletteOptions = {
         secondary: "#505A5B",
         disabled: "#A8ADAD",
     },
+    grey: {
+        100: "#F7F8F8",
+        200: "#EFF0F0",
+        300: "#DFE1E1",
+        400: "#CFD2D2",
+        500: "#9DA3A3",
+        600: "#7C8484",
+        700: "#505A5B",
+        800: "#27302F",
+        900: "#1A201F",
+        A100: "#F7F8F8",
+        A200: "#EFF0F0",
+    }
 }
