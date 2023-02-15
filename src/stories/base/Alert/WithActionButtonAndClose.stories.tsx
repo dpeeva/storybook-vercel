@@ -38,13 +38,13 @@ const Template: StoryFn = ({
         {...{ variant, severity, elevation }}
         action={<>
             <MuiButton
-                variant="contained"
-                color="primary"
+                variant="outlined"
+                color="warning"
                 size="small"
             >
-                Action
+                Приеми
             </MuiButton>
-            <MuiIconButton size="small">
+            <MuiIconButton color="warning" size="small">
                 <Close fontSize="inherit" />
             </MuiIconButton>
         </>}

@@ -37,11 +37,11 @@ const Template: StoryFn = ({
         {...{ variant, severity, elevation }}
         action={
             <MuiButton
-                variant="contained"
-                color="primary"
+                variant="outlined"
+                color="warning"
                 size="small"
             >
-                Action
+                Приеми
             </MuiButton>
         }
         sx={{ width: "320px" }}

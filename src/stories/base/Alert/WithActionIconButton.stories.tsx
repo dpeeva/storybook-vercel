@@ -37,7 +37,7 @@ const Template: StoryFn = ({
     <MuiAlert
         {...{ variant, severity, elevation }}
         action={
-            <MuiIconButton size="small">
+            <MuiIconButton color="warning" size="small">
                 <Close fontSize="inherit" />
             </MuiIconButton>
         }
