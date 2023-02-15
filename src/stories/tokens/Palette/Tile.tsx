@@ -1,4 +1,4 @@
-import { ThemeName } from "../../../typings"
+import { ThemeName, themes } from "../../../typings"
 import { Box, styled } from "@mui/material"
 import { BoxProps } from "@mui/system"
 
@@ -16,8 +16,10 @@ export const Tile = styled(Box)<Props>(({
 }) => ({
     fontFamily: ["Kometa", "Montserrat", "sans-serif"].join(", "),
     padding: "10px 20px",
+    borderTop: `1px solid ${themes[mode].palette.grey[200]}`,
+    borderBottom: `1px solid ${themes[mode].palette.grey[200]}`,
     backgroundColor: bgcolor,
     color: color,
-    minWidth: "170px",
+    minWidth: "200px",
     maxWidth: "33%",
 }))

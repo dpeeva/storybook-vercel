@@ -10,8 +10,8 @@ export const palette: PaletteOptions = {
     },
     secondary: {
         main: "#505A5B",
-        light: "#7C8484", // "#737b7b", // auto-generated
-        dark: "#343F3E", // "#383e3f", // auto-generated
+        light: "#7C8484", // auto-generated
+        dark: "#343F3E", // auto-generated
         contrastText: "#fff",
     },
     info: {
@@ -21,20 +21,20 @@ export const palette: PaletteOptions = {
         contrastText: "#fff",
     },
     error: {
-        main: "#F71735",
-        light: "#f8455d", // auto-generated
-        dark: "#ac1025", // auto-generated
+        main: "#E3170A",
+        light: "#E8453B", // auto-generated
+        dark: "#9E1007", // auto-generated
     },
     success: {
-        main: "#3FAF90",
-        light: "#65bfa6", // auto-generated
-        dark: "#2c7a64", // auto-generated
+        main: "#447604",
+        light: "#699136", // auto-generated
+        dark: "#2F5202", // auto-generated
         contrastText: "#fff",
     },
     warning: {
         main: "#F9C050",
         light: "#facc73", // auto-generated
-        dark: "#F6A444", // "#F7B32B", // auto-generated
+        dark: "#F6A444", // auto-generated
     },
     text: {
         primary: "#343F3E",

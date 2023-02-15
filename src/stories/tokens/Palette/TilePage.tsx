@@ -17,9 +17,10 @@ const ColorWrapper = styled(Box)({
 
 const ColorDefinition = styled(Box)({
     display: "flex",
-    flexWrap: "nowrap",
+    flexWrap: "wrap",
     flexDirection: "row",
     alignItems: "center",
+    maxWidth: "600px",
 })
 
 interface Props {
@@ -45,20 +46,20 @@ export const TilePage: React.FunctionComponent<Props> = ({
 
     return <Wrapper>
         {colors.map((color, index) => <ColorWrapper key={`${color}-${index}`}>
-            <Typography variant="h2">
+            <Typography variant="h2" sx={{ margin: "12px 0" }}>
                 {color.name}
             </Typography>
-            <Typography variant="subtitle1">
+            <Typography variant="subtitle1" sx={{ margin: "12px 0" }}>
                 {color.resume}
             </Typography>
-            <Typography variant="body1">
+            <Typography variant="body1" sx={{ margin: "12px 0" }}>
                 {color.description}
             </Typography>
-            {color.nuances.map((c, i: number) => <ColorDefinition key={`${c}-${i}`}>
-                <Tile
-                    key={`tile-${i}`}
+            <ColorDefinition>
+                {color.nuances.map((c, i: number) => <Tile
+                    key={`${c}-${i}`}
                     bgcolor={c.value}
-                    color={color.contrastText}
+                    color={c.color}
                     sx={{ margin: "5px 0", width: "200px" }}
                 >
                     <Typography variant="caption" color="inherit">
@@ -67,8 +68,8 @@ export const TilePage: React.FunctionComponent<Props> = ({
                     <Typography variant="h6" color="inherit">
                         {c.value}
                     </Typography>
-                </Tile>
-            </ColorDefinition>)}
+                </Tile>)}
+            </ColorDefinition>
         </ColorWrapper>)}
     </Wrapper>
 }
