@@ -37,14 +37,14 @@ const Template: StoryFn = ({
         {...{ variant, severity, elevation }}
         action={
             <MuiButton
-                variant="outlined"
-                color="warning"
+                variant={variant == "filled" ? "outlined" : "contained"}
+                color={"inherit"}
                 size="small"
             >
                 Приеми
             </MuiButton>
         }
-        sx={{ width: "320px" }}
+        sx={{ width: "400px" }}
     >
         {title && <MuiAlertTitle>{title}</MuiAlertTitle>}
         {content}
@@ -55,6 +55,6 @@ export const WithActionButton = Template.bind({})
 WithActionButton.args = {
     variant: "filled",
     severity: "error",
-    title: "Заглавие",
+    title: "Заглавие на съобщението",
     content: undefined,
 }

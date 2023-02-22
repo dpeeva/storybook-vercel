@@ -35,7 +35,7 @@ const Template: StoryFn = ({
 }) => (
     <MuiAlert
         {...{ variant, severity, elevation }}
-        sx={{ width: "320px" }}
+        sx={{ width: "400px" }}
     >
         {title && <MuiAlertTitle>{title}</MuiAlertTitle>}
         {content}

@@ -36,7 +36,7 @@ const Template: StoryFn = ({
     <MuiAlert
         {...{ variant, severity, elevation }}
         onClose={() => { }}
-        sx={{ width: "320px" }}
+        sx={{ width: "400px" }}
     >
         {title && <MuiAlertTitle>{title}</MuiAlertTitle>}
         {content}
@@ -47,6 +47,6 @@ export const WithCloseHandler = Template.bind({})
 WithCloseHandler.args = {
     variant: "filled",
     severity: "error",
-    title: "Заглавие",
+    title: "Заглавие на съобщението",
     content: undefined,
 }
