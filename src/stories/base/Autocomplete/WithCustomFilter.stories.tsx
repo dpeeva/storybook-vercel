@@ -1,8 +1,13 @@
 import type { Meta, StoryFn } from "@storybook/react"
 import { MuiAutocomplete, MuiBox, MuiMenuItem, MuiTextField } from "../../../mui"
 import { argTypes } from "./argTypes"
-import { AutocompleteProps, CreateFilterOptionsConfig, TextFieldProps } from "@mui/material"
-import { createFilterOptions } from "@mui/material/Autocomplete"
+import {
+    AutocompleteProps,
+    // CreateFilterOptionsConfig,
+    TextFieldProps
+} from "@mui/material"
+// import { createFilterOptions } from "@mui/material/Autocomplete"
+import { sortTeams } from "./sortTeams"
 import { data as teams } from "./teams"
 import { Team } from "./types"
 
@@ -32,11 +37,11 @@ type Props = AutocompleteProps<unknown, boolean, boolean, boolean, "div"> & {
     variant: TextFieldProps["variant"]
     label: string
     placeholder: string
-    ignoreAccents: CreateFilterOptionsConfig<Team>["ignoreAccents"]
-    matchFrom: CreateFilterOptionsConfig<Team>["matchFrom"]
-    ignoreCase: CreateFilterOptionsConfig<Team>["ignoreCase"]
-    trim: CreateFilterOptionsConfig<Team>["trim"]
-    limit: CreateFilterOptionsConfig<Team>["limit"]
+    // ignoreAccents: CreateFilterOptionsConfig<Team>["ignoreAccents"]
+    // matchFrom: CreateFilterOptionsConfig<Team>["matchFrom"]
+    // ignoreCase: CreateFilterOptionsConfig<Team>["ignoreCase"]
+    // trim: CreateFilterOptionsConfig<Team>["trim"]
+    // limit: CreateFilterOptionsConfig<Team>["limit"]
 }
 
 const Template: StoryFn = ({
@@ -53,20 +58,25 @@ const Template: StoryFn = ({
     variant,
     label,
     placeholder,
-    ignoreAccents,
-    matchFrom,
-    ignoreCase,
-    trim,
-    limit
+    // ignoreAccents,
+    // matchFrom,
+    // ignoreCase,
+    // trim,
+    // limit
 }) => {
-    const filterOptions = createFilterOptions({
-        ignoreAccents,
-        matchFrom,
-        ignoreCase,
-        trim,
-        limit,
-        stringify: (option: Team) => option.name
-    })
+    // const filterOptions = createFilterOptions({
+    //     ignoreAccents,
+    //     matchFrom,
+    //     ignoreCase,
+    //     trim,
+    //     limit,
+    //     stringify: (option: Team) => option.name
+    // })
+
+    const filterOptions = (
+        options: Team[],
+        { inputValue }: { inputValue: string }
+    ) => sortTeams(options, inputValue)
 
     return <MuiBox sx={{ width: "250px" }}>
         <MuiAutocomplete
@@ -109,8 +119,9 @@ WithCustomFilter.args = {
     disabled: false,
     label: "Имейл",
     placeholder: "Моля, изберете",
-    matchFrom: "start",
-    ignoreCase: true,
-    trim: true,
-    limit: 100,
+    // ignoreAccents: false,
+    // matchFrom: "start",
+    // ignoreCase: true,
+    // trim: true,
+    // limit: 100,
 }
